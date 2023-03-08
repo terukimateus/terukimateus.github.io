@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+
+html {
+    overflow-x: hidden; 
+    height: 100%;
+}
+#credit {
+    position: fixed;
+    top: 650px;
+    left: 600px;
+}
+body {
+    min-height: 100%;
+   background-color: rgb(0, 0, 0);
+   background-image: url("../images/me.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+div#botoes {
+    position: fixed;
+    left: 300px;
+    width: 900px;
+    height: 40px;
+    background-color: transparent;
+    border: 5px solid #0862e9;
+    border-radius: 40px;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+
+/* PAGINA HOME */
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 200px;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#home1 {
+    display: block;
+
+}
+
+p {
+    text-align: center;
+    top: 150px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-size: 25px;
+}
+/* PAGINA TRABALHOS */
+#imc {
+    position: absolute;
+    top: 80px;
+    font-weight: 900;
+    left: 150px;
+    color: #0862e9;
+}
+
+#tempo {
+    position: absolute;
+    top: -230px;
+    left: 1140px;
+    font-weight: 900;
+    color: #0862e9;
+}
+
+#calculadora {
+    position: absolute;
+    top: -25px;
+    left: 810px;
+    font-weight: 900;
+    color: #0862e9;
+}
+
+#cronometro {
+    position: absolute;
+    top: -130px;
+    left: 480px;
+    font-weight: 900;
+    color: #0862e9;
+}
+
+#trabalhos p {
+    position: relative;
+    text-align: left;
+}
+
+#weatherpng {
+    position: absolute;
+    top: 170px;
+    left: 1130px;
+    width: 250px;
+    -webkit-box-shadow: 1px 1px 0px 9px rgba(0,104,156,1);
+-moz-box-shadow: 1px 1px 0px 9px rgba(0,104,156,1);
+box-shadow: 1px 1px 0px 9px rgba(0,104,156,1);
+}
+
+#cronometropng {
+    left: 490px;
+    top: 170px;
+    position: absolute;
+    -webkit-box-shadow: 1px 1px 0px 9px rgba(0,104,156,1);
+-moz-box-shadow: 1px 1px 0px 9px rgba(0,104,156,1);
+box-shadow: 1px 1px 0px 9px rgba(0,104,156,1);
+    width: 250px;
+}
+#imcpng {
+    position: absolute;
+    left: 160px;
+    top: 170px;
+    -webkit-box-shadow: 1px 1px 0px 9px rgba(0,104,156,1);
+-moz-box-shadow: 1px 1px 0px 9px rgba(0,104,156,1);
+box-shadow: 1px 1px 0px 9px rgba(0,104,156,1);
+    width: 250px;
+}
+
+#calculadorapng {
+    position: absolute;
+    left: 800px;
+    top: 170px;
+    -webkit-box-shadow: 1px 1px 0px 9px rgba(0,104,156,1);
+    -moz-box-shadow: 1px 1px 0px 9px rgba(0,104,156,1);
+    box-shadow: 1px 1px 0px 9px rgba(0,104,156,1);
+    width: 250px;
+}
+img {
+    z-index: -1;
+}
+#trabalhos {
+    font-size: 5px;
+    display: none;
+}
+
+#imcdesc {
+    position: absolute;
+    left: 150px;
+    top: 375px;
+    font-size: 20px;
+}
+
+#crodesc {
+    position: absolute;
+    left: 480px;
+    top: 165px;
+    font-size: 20px;
+}
+
+#calcdesc {
+    position: absolute;
+    left: 790px;
+    top: 270px;
+    font-size: 20px;
+}
+
+#tempodesc {
+    position: absolute;
+    left: 1120px;
+    top: 60px;
+    font-size: 20px;
+}
+
+/*SOCIAL MEDIA BUTTONS */
+
+.box .btn {
+    position: relative;
+    left: 630px;
+    top: 140px;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.box .btn:hover {
+    width: 180px;
+    border-radius: 35px;
+}
+
+.box .btn .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    color: black;
+    transition: all 0.3s ease-out;
+}
+
+span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#linha-horizontal {
+    position: absolute;
+    left: 360px;
+    top: 600px;
+    width: 800px;
+    border: 1px solid #ffffff;
+}
+
+#linha-horizontal2 {
+    position: absolute;
+    left: 360px;
+    top: 1300px;
+    width: 800px;
+    border: 1px solid #ffffff;
+}
+
+h3 {
+    color: #0862e9;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    font-weight: 900;
+    left: 575px;
+    top: 520px;
+}
+
+#socialmedia {
+    position:absolute;
+    left: 450px;
+    top: 650px;
+}
+/* PAGE BUTTONS */
+
+button {
+    border: 0px;
+    color: white;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    left: 580px;
+}
+#home {
+    z-index: 1;
+    position: relative;
+    left: 10px;
+}
+
+#trabalho {
+    z-index: 1;
+    position: relative;
+    left: 140px;
+}
+
+#experiencias {
+    position: relative;
+    left: 270px;
+}
+
+#contato {
+    position: relative;
+    left: 360px;
+}
+
+#artes {
+    position: absolute;
+    left: 600px;
+    top: 1260px;
+    font-weight: 700;
+    color: white;
+    text-decoration: underline;
+}
+
+#black {
+    position: absolute;
+    top: 1350px;
+}
+/* PAG experiencias */
+
+#experiences {
+    display: none;
+}
+
+#experiencestxt {
+    font-size: 40px;
+    position: absolute;
+    top: 200px;
+    left: 550px;
+}
+
+#linha-horizontal3 {
+    position: absolute;
+    left: 525px;
+    top: 300px;
+    width: 500px;
+    border: 1px solid #ffffff;
+}
+
+#textosexp {
+    top: 180px;
+    left: 430px;
+    position: absolute;
+}
+
+/*PAGINA CONTATO */
+#contact {
+    display: none;
+}
+
+#btnwhats {
+    position: absolute;
+    top: 380px;
+    left: 670px;
+}
+
+@media screen and (max-width:768px) {
+    body {
+       background-size: contain;
+    }
+    h2 {
+        left: 10px;
+        top: 100px;
+    }
+    p {
+        left: 10px;
+        top: 50px;
+    }
+    #credit {
+        position: fixed;
+        top: 550px;
+        left: 40px;
+    }
+    div#botoes {
+        width: 255px;
+        left: 45px;
+    }
+    button {
+        font-size: 12px;
+        width: 55%;
+    }
+    #home {
+        top: 10px;
+        left: -60px;
+    }
+    #trabalho {
+        left: 5px;
+        top: -10px;
+    }
+    #experiencias {
+        left: 95px;
+        top: -30px
+    }
+    #contato {
+       top: -50px;
+       left: 170px;
+    }
+    .box .btn {
+        top: 50px;
+        left: 80px;
+    }
+
+    #imc {
+        width: 200px;
+        font-size: 15px;
+        left: -125px;
+        top: 85px;
+    }
+    #trabalhos {
+        margin-left: 135px;
+        margin-right: 135px;
+    }
+    #imcpng {
+        width: 150px;
+        left: 20px;
+        top: 130px;
+    }
+    #calculadora {
+        width: 200px;
+        font-size: 15px;
+        left: 55px;
+        top: 25px;
+    }
+    #calculadorapng {
+        width: 150px;
+        left: 200px;
+        top: 130px;
+    }
+    #cronometropng {
+        width: 150px;
+        left: 20px;
+        top: 350px;
+    }
+    #weatherpng {
+        width: 150px;
+        left: 200px;
+        top: 350px;
+    }
+    #cronometro {
+        width: 200px;
+        font-size: 15px;
+        left: -130px;
+        top: 185px;
+    }
+    #tempo {
+        width: 200px;
+        font-size: 15px;
+        left: 55px;
+        top: 135px;
+    }
+    #imcdesc{
+        width: 225px;
+        left: -110px;
+        top: 260px;
+        font-size: 10px;
+    }
+    #calcdesc{
+        width: 155px;
+        left: 70px;
+        top: 200px;
+        font-size: 10px;
+    }
+    #crodesc{
+        font-size: 0px;
+    }
+    #tempodesc{
+        font-size: 0px;
+    }
+    #linha-horizontal {
+        width: 250px;
+        left: 60px;
+        top: 590px;
+    }
+    #linha-horizontal2 {
+        width: 250px;
+        left: 60px;
+        top: 990px;
+    }
+    h3 {
+        font-size: 20px;
+        left: 80px;
+        top: 530px;
+    }
+    #socialmedia {
+        width: 300px;
+        left: 40px;
+        top: 630px;
+    }
+    #artes {
+        left: 70px;
+        font-size: 15px;
+        top: 950px;
+    }
+    #black {
+        top: 1000px;
+    }
+    #experiences {
+        margin-left: 135px;
+        margin-right: 135px;
+    }
+    #experiencestxt {
+        font-size: 30px;
+        left: 25px;
+        top: 70px;
+    }
+    #linha-horizontal3 {
+        width: 300px;
+        left: 40px;
+        top: 150px;
+    }
+    #textosexp {
+        left: 85px;
+        top: 115px;
+        width: 200px;
+    }
+    #btnwhats {
+        left: 150px;
+        top: 265px;
+    }
+}
