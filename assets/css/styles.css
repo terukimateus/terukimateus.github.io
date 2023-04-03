@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ESSENTIALS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #bf19ff;
+    border-radius: 12px;
+  }
+
+html {
+    color: black;
+	scroll-behavior: smooth;
+}
+
+
+/*APRESENTAÇÃO*/
+
+p {
+    font-weight: 300;
+}
+
+div#text {
+    background-color: black;
+    height: 40rem;
+    overflow-y: hidden;
+    max-width: 95em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 4em;
+    gap: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    transition: 1.0s;
+    color: #bf19ff;
+}
+
+.navbar {
+    display: flex;
+    padding-top: 2rem;
+    padding-right: 3rem;
+    justify-content:right;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 1.5em;
+    margin-top: 10em;
+    margin-left: 5em;
+    margin-right: 5em;
+    width: fit-content;
+}
+
+/*SOBRE*/
+
+.about {
+    color: black;
+
+}   
+
+.about-photo {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+#photo {
+    width: 30rem;
+}
+
+.color-highlight {
+    color: #bf19ff;
+}
+
+
+/* PROJETOS */
+
+
+#projetos {
+    background-color: #3fffb8;
+}
+
+
+.container-projects {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    overflow-y: hidden;
+    padding-top: 2em;
+    gap: 3rem;
+}
+
+.itens {
+    transition: all 0.3s;
+    cursor: pointer;
+    filter: brightness(50%);
+  }
+
+.itens:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+.itens img {
+    filter: brightness(50%);
+    width: 17rem;
+    height: 10rem;
+}
+
+.itens figcaption {
+    position: relative;
+    top: -105px;
+    right: 0px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+  }
+
+.github {
+    transition: 1.2s;
+    color: black;
+}
+
+
+#footer {
+    background-color: black;
+}
+
+.social-links {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+
+/* CONTATO */
+div#contato {
+    height: 32em;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    left: 27em;
+    font-size: 1.25rem;
+    gap: 0.5em;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+    color: black;
+}
+
+.form input {
+    border: 0.1em solid black;
+    border-radius: 0.7em;
+}
+
+.form textarea {
+    text-align: center;
+    height: 7em;
+    border: 0.1em solid black;
+    border-radius: 0.7em;
+}
+
+
+.form button {
+    transition: 1s;
+    background-color: transparent;
+    border: 0.05em solid black;
+    border-radius: 0.7em;
+    font-size: 1.1em;
+}
+
+.form button:hover {
+    color: #bf19ff;
+}
+
+.aaa {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+
+@media screen and (max-width: 441px) {
+    .title {
+        margin-top: 3em;
+    }
+    .container-projects { 
+        flex-direction:column;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .navbar {
+        padding-right: 1em;
+    }
+  }

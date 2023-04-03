@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://kit.fontawesome.com/276f9ca786.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <title>Mateus Teruki</title>
+</head>
+<body>
+    <!--TEXT APRESENTATION-->
+
+
+
+    
+    <div id="text">
+            <nav class="navbar">
+                <a href="#title">Início</a>
+                <a href="#about">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="title">
+                <h1><span class="color-highlight">Olá,</span> meu nome é <span class="color-highlight">Mateus Teruki!</span></h1>
+                <p>Sou programador focado na área de front-end, como web-developer.</p>
+            </div>
+    </div>
+
+    <!--Background Vanta.Js-->
+    <script id="background">
+        VANTA.GLOBE({
+        el: "#text",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 400.00,
+        minWidth: 410.00,
+        scale: 1.00,
+        size: 2.00,
+        scaleMobile: 1.00,
+        color: 0x3fffb8,
+        color2: 0xbf19ff,
+        backgroundColor: 0x0
+    })
+    </script>
+
+    <!--Sobre mim-->
+    <div id="about">
+        <div class="container">
+            <h2 class="about">Sobre mim</h2>
+            <div class="about-photo">
+                <img id="photo" src="assets/images/me.png">
+            </div>
+
+            <p class="about">Sou estudante de engenharia de software, trabalho atualmente como estagiário em design gráfico.
+              <br>  Estudo as linguagens JavaScript, HTML5 e CSS3, focado atualmente na área de front-end web-developer.
+                <br>Também tenho vasta experiência em Adobe Photoshop e After Effects.
+            </p>
+        </div>
+    </div>
+
+    <!--Projetos-->
+
+    <div id="projetos">
+        <div class="container">
+            <h2 class="about">Projetos</h2>
+            <div class="container-projects">
+                <div class="itens">
+                    <img src="assets/images/weather.png">
+                    <figcaption>Web Weather</figcaption>
+                    <div class="languages">
+                        <figcaption><i class="fa-brands fa-js" style="color: #bf19ff;"></i>  
+                            <i class="fa-brands fa-html5" style="color: #bf19ff;"></i>  
+                            <i class="fa-brands fa-css3-alt" style="color: #bf19ff;"></i></figcaption>
+                    </div>
+                </div>
+                <div class="itens">
+                    <img src="assets/images/cronom.png">
+                    <figcaption>Cronômetro</figcaption>
+                    <div class="languages">
+                        <figcaption><i class="fa-brands fa-js" style="color: #bf19ff;"></i>  
+                            <i class="fa-brands fa-html5" style="color: #bf19ff;"></i>  
+                            <i class="fa-brands fa-css3-alt" style="color: #bf19ff;"></i></figcaption>
+                    </div>
+                </div>
+                <div class="itens">
+                    <img src="assets/images/portfolio.png">
+                    <figcaption>Portfólio</figcaption>
+                    <div class="languages">
+                        <figcaption><i class="fa-brands fa-js" style="color: #bf19ff;"></i>  
+                            <i class="fa-brands fa-html5" style="color: #bf19ff;"></i>  
+                            <i class="fa-brands fa-css3-alt" style="color: #bf19ff;"></i></figcaption>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/terukimateus" class="github" target="_blank">
+                <i class="fa-brands fa-github" style="color: #bf19ff;"></i> 
+                Para mais projetos acesse meu github!</a>
+        </div>
+    </div>
+
+    <!---CONTATO-->
+
+    <div id="contato">
+            <div class="container">
+                <h2 class="about">Contato</h2>
+                <div class="aaa">
+                <form action="https://formsubmit.co/terukimateus@outlook.com" method="POST" class="form">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" required>
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" placeholder="Sua mensagem!" required></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/assets/pages/thanks.html">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            </div>
+    </div>
+
+
+
+    <!--FOOTER-->
+
+    <div id="footer">
+        <footer class="container">
+            <p style="color: white">Copyright Mateus Teruki©</p>
+            <div class="social-links">
+                <a href="https://api.whatsapp.com/send?phone=5544998400279" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+                <a href="https://github.com/terukimateus" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+                <a href="https://www.instagram.com/terukimateus/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

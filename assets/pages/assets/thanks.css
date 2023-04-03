@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    padding-top: 20%;
+    text-align: center;
+    gap: 1em;
+}
+
+a {
+    color: #bf19ff;
+    transition: 1.1s;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: black;
+    scale: 1.05;
+}
