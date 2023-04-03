@@ -228,4 +228,8 @@ div#contato {
     .navbar {
         padding-right: 1em;
     }
+    .title {
+        margin-left: 2em;
+        font-size: 1.3em;
+    }
   }
