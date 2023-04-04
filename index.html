@@ -51,10 +51,10 @@
 
     <!--Sobre mim-->
     <div id="about">
-        <div class="container">
+        <div class="container reveal">
             <h2 class="about">Sobre mim</h2>
             <div class="about-photo">
-                <img id="photo" src="assets/images/me.png">
+                <img id="photo" src="assets/images/me.webp">
             </div>
 
             <p class="about">Sou estudante de engenharia de software, trabalho atualmente como estagiário em design gráfico.
@@ -67,11 +67,11 @@
     <!--Projetos-->
 
     <div id="projetos">
-        <div class="container">
+        <div class="container reveal">
             <h2 class="about">Projetos</h2>
             <div class="container-projects">
-                <div class="itens">
-                    <img src="assets/images/weather.png">
+                <div onclick="abrirModal()" class="itens">
+                    <img src="assets/images/weather.webp">
                     <figcaption>Web Weather</figcaption>
                     <div class="languages">
                         <figcaption><i class="fa-brands fa-js" style="color: #bf19ff;"></i>  
@@ -79,8 +79,8 @@
                             <i class="fa-brands fa-css3-alt" style="color: #bf19ff;"></i></figcaption>
                     </div>
                 </div>
-                <div class="itens">
-                    <img src="assets/images/cronom.png">
+                <div onclick="abrirCronometro()" class="itens">
+                    <img src="assets/images/cronom.webp">
                     <figcaption>Cronômetro</figcaption>
                     <div class="languages">
                         <figcaption><i class="fa-brands fa-js" style="color: #bf19ff;"></i>  
@@ -88,8 +88,8 @@
                             <i class="fa-brands fa-css3-alt" style="color: #bf19ff;"></i></figcaption>
                     </div>
                 </div>
-                <div class="itens">
-                    <img src="assets/images/portfolio.png">
+                <div onclick="abrirPortfolio()" class="itens">
+                    <img src="assets/images/portfolio.webp">
                     <figcaption>Portfólio</figcaption>
                     <div class="languages">
                         <figcaption><i class="fa-brands fa-js" style="color: #bf19ff;"></i>  
@@ -103,11 +103,11 @@
                 Para mais projetos acesse meu github!</a>
         </div>
     </div>
-
+    
     <!---CONTATO-->
 
     <div id="contato">
-            <div class="container">
+            <div class="container reveal">
                 <h2 class="about">Contato</h2>
                 <div class="aaa">
                 <form action="https://formsubmit.co/terukimateus@outlook.com" method="POST" class="form">
@@ -116,7 +116,7 @@
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" required>
                     <label for="message">Mensagem</label>
-                    <textarea name="message" placeholder="Sua mensagem!" required></textarea>
+                    <textarea name="message" required></textarea>
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="http://terukimateus.github.io/assets/pages/thanks.html">
                     <button type="submit">Send</button>
@@ -139,5 +139,65 @@
             </div>
         </footer>
     </div>
+
+    <!--MODAL-->
+
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <h1 style="color: #bf19ff;">Web Weather</h1>
+            <p class="itens-languages">
+                <i class="fa-brands fa-js" style="color: #fff;"></i>
+                <i class="fa-brands fa-css3" style="color: #fff;"></i>
+                <i class="fa-brands fa-html5" style="color: #fff;"></i>
+            </p>
+
+            <p>Web-site simples, feito para descobrir informações básicas <br>sobre o clima atual da cidade desejada.</p>
+            <p>Versão 1.0.1</p>
+
+            <iframe class="video"
+            src="https://www.youtube.com/embed/XKCNQ2-0X88" title="YouTube video player" frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
+              allowfullscreen></iframe>
+              <a href="/assets/pages/weather.html">Para acessar o projeto, clique aqui.</a>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="cronometro-modal">
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <h1 style="color: #bf19ff;">Cronômetro</h1>
+            <p class="itens-languages">
+                <i class="fa-brands fa-js" style="color: #fff;"></i>
+                <i class="fa-brands fa-css3" style="color: #fff;"></i>
+                <i class="fa-brands fa-html5" style="color: #fff;"></i>
+            </p>
+
+            <p>Cronômetro simples, com função de iniciar, parar e reiniciar. Um dos meus primeiros projetos, feito com JS, HTML5 e CSS3</p>
+            <p>Versão 1.0</p>
+
+            <iframe class="video"
+            src="https://www.youtube.com/embed/81ISqMWEv_w" title="YouTube video player" frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
+              allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="portfolio-modal">
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <h1 style="color: #bf19ff;">Portfólio</h1>
+            <p class="itens-languages">
+                <i class="fa-brands fa-js" style="color: #fff;"></i>
+                <i class="fa-brands fa-css3" style="color: #fff;"></i>
+                <i class="fa-brands fa-html5" style="color: #fff;"></i>
+            </p>
+
+            <p>Este mesmo em que você está navegando, feito em JavaScript, HTML5 e CSS3.</p>
+            <p>Versão 3.0</p>
+
+        </div>
+    </div>
+
 </body>
 </html>
