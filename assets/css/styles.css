@@ -128,7 +128,7 @@ a:hover {
     flex-direction: row;
     overflow-y: hidden;
     padding-top: 1em;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 .itens {
@@ -225,13 +225,16 @@ div#contato {
     background-color: transparent;
     border: 0.05em solid black;
     border-radius: 0.7em;
-    font-size: 1.1em;
-    width: 4em;
+    font-size: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 2em;
+    cursor: pointer;
 }
 
-.form button:hover {
-    color: #bf19ff;
-}
 
 .aaa {
     display: flex;
