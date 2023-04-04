@@ -269,6 +269,7 @@ div#contato {
     text-align: center;
     border-radius: 5em;
     background-color: #38383894;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 3em;
 }
@@ -318,7 +319,6 @@ iframe {
 @media screen and (max-width: 1255px) {
     .modal {
         width: 80%;
-        height: 100%;
     }    
 }
 
@@ -326,8 +326,11 @@ iframe {
 @media screen and (max-width: 520px) {
     .modal {
         width: 80%;
-        height: 100%;
     }    
+
+    iframe {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 441px) {
@@ -354,3 +357,9 @@ iframe {
         width: 90%;
     }    
 }
+
+    @media screen and (max-width: 320px) {
+        .modal {
+            width: 100%;
+        }
+    }
