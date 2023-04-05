@@ -30,6 +30,13 @@ function reveal() {
       if(e.target.id == 'fechar' || e.target.id == 'janela-modal') {
         modal.classList.remove('abrir')
       }
+      window.addEventListener('keydown', function (event) {
+        const modal = document.getElementById('janela-modal')
+      if (event.key === 'Escape') {
+        modal.classList.remove('abrir')
+      }
+    })
+    
     })
   }
 
@@ -41,6 +48,13 @@ function reveal() {
       if(e.target.id == 'fechar' || e.target.id == 'cronometro-modal') {
         modal.classList.remove('abrir')
       }
+      window.addEventListener('keydown', function (event) {
+        const modal = document.getElementById('cronometro-modal')
+      if (event.key === 'Escape') {
+        modal.classList.remove('abrir')
+      }
+    })
+    
     })
   }
 
@@ -52,7 +66,15 @@ function reveal() {
       if(e.target.id == 'fechar' || e.target.id == 'portfolio-modal') {
         modal.classList.remove('abrir')
       }
+      window.addEventListener('keydown', function (event) {
+        const modal = document.getElementById('portfolio-modal')
+      if (event.key === 'Escape') {
+        modal.classList.remove('abrir')
+      }
+    })    
     })
   }
+  
+  
 
   //////////////
