@@ -93,6 +93,7 @@ a:hover {
 
 .title button {
     background-color: transparent;
+    -webkit-background-color: transparent;
     border: 0.2em solid #bf19ff;
     width: 14em;
     height: 3em;
@@ -297,10 +298,12 @@ div#contato {
 .modal button.button-projeto {
     transition: 1.1s;
     background-color: transparent;
+    -webkit-background-color: transparent;
     width: 18em;
     height: 2em;
     border-radius: 1em;
     border: 0.1em solid #bf19ff;
+    -webkit-border: 0.1em solid #bf19ff;
     border-collapse: separate;
     border-spacing: 10px
 }
@@ -317,8 +320,7 @@ div#contato {
     justify-content: start;
 }
 
-.itens-languages {
-    display: flex;
+.itens-languages {  
     margin-top: 1em;
     margin-bottom: 1em;
     gap: 2em;
