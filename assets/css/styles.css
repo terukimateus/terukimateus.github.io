@@ -16,7 +16,7 @@
   }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #000000;
   }
 
   *::-webkit-scrollbar-thumb {
@@ -24,7 +24,10 @@
     border-radius: 12px;
   }
 
-  
+  body {
+    background-color: rgb(28, 28, 28);
+  }
+
   .reveal{
     position: relative;
     transform: translateX(-2em);
@@ -83,6 +86,10 @@ a:hover {
     gap: 2rem;
 }
 
+.textos {
+    font-size: 2em;
+}
+
 .title {
     font-size: 1.5em;
     margin-top: 10em;
@@ -104,8 +111,7 @@ a:hover {
 /*SOBRE*/
 
 .about {
-    color: black;
-
+    color: white;
 }   
 
 .about-photo {
@@ -127,7 +133,7 @@ a:hover {
 
 
 #projetos {
-    background-color: #3fffb8;
+    background-color: #000000;
 }
 
 
@@ -171,12 +177,12 @@ a:hover {
 
 .github {
     transition: 1.2s;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
 #footer {
-    background-color: black;
+    background-color: rgb(28, 28, 28);
 }
 
 .social-links {
@@ -186,11 +192,57 @@ a:hover {
     gap: 1em;
 }
 
+/*EXPERIENCIAS*/
+
+#experiencias {
+    height: 25em;
+    background-color: rgb(28, 28, 28);
+}
+
+.experiencias {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    text-align: start;
+    margin-top: 4em;
+    gap: 4em;
+}
+
+.descs {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.botoes {
+    height: fit-content;
+    display: flex;
+    background-color: #121212;
+    flex-direction: column;
+}
+
+.experiencia-button {
+    background-color: transparent;
+    -webkit-background-color:transparent;
+    border: none;
+    width: 10em;
+    height: 3em;
+    font-size: 1.15em;
+    cursor: pointer;
+}
+
+.ativo {
+    border-left: 0.3em solid #f200ff;
+    -webkit-border-left: 0.3em solid #f200ff;
+    color: #f200ff;
+}
 
 /* CONTATO */
 div#contato {
     height: 32em;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 .form {
     display: flex;
@@ -205,7 +257,7 @@ div#contato {
 .form input,
 .form textarea,
 .form button {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .form label {
@@ -214,7 +266,7 @@ div#contato {
 
 .form input {
     border: none;
-    border-bottom: 0.1em solid black;
+    border-bottom: 0.1em solid rgb(255, 253, 253);
     outline: 0;
     height: 2em;
     background-color: transparent;
@@ -222,20 +274,20 @@ div#contato {
 
 .form textarea {
     height: 7em;
-    border: 0.1em solid black;
+    border: 0.1em solid rgb(255, 255, 255);
     outline: 0;
     background-color: transparent;
 }
 
 .form textarea::placeholder {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
 .form button {
     transition: 1s;
     background-color: transparent;
-    border: 0.05em solid black;
+    border: 0.05em solid rgb(255, 255, 255);
     border-radius: 0.7em;
     font-size: 1.5em;
     height: 1.5em;
@@ -380,7 +432,23 @@ iframe {
         width: 60%;
         height: 4em;
     }
+    #experiencias {
+        height: 35em;
+    }
+    .experiencias {
+        flex-direction: column;
+        gap:1.3em;
+    }
+    .experiencia-button {
+        width: 70%;
+    }
+    .botoes {
+        flex-direction: row;
+    }
 
+    .descs {
+        width: 80%;
+    } 
     iframe {
         width: 100%;
     }

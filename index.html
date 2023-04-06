@@ -53,7 +53,7 @@
     <!--Sobre mim-->
     <div id="about">
         <div class="container reveal">
-            <h2 class="about">Sobre mim</h2>
+            <h2 class="textos">Sobre mim</h2>
             <div class="about-photo">
                 <img id="photo" src="assets/images/me.webp">
             </div>
@@ -69,7 +69,7 @@
 
     <div id="projetos">
         <div class="container reveal">
-            <h2 class="about">Projetos</h2>
+            <h2 class="textos">Projetos</h2>
             <div class="container-projects">
                 <div onclick="abrirModal()" class="itens">
                     <img src="assets/images/weather.webp">
@@ -94,18 +94,38 @@
                     <figcaption>Portfólio</figcaption>
                 </div>
             </div>
-            <p style="font-size: 1.1em; color: black;">Clique nas imagens para interagir!</p>
+            <p style="font-size: 1.1em; color: rgb(255, 255, 255);">Clique nas imagens para interagir!</p>
             <a href="https://github.com/terukimateus" class="github" target="_blank">
                 <i class="fa-brands fa-github" style="color: #bf19ff;"></i> 
                 Para mais projetos acesse meu github!</a>
         </div>
     </div>
+
+    <!--EXPERIENCIAS-->
+
+    <div id="experiencias">
+         <div class="container reveal">
+            <h2 class="textos" style="color: white;">Experiencias</h2>
+            <div class="experiencias">
+                <div class="botoes">
+                    <button id="saura" class="experiencia-button ativo" onclick="saura()">Saura MaisBB</button>
+                    <button id="estudos" class="experiencia-button" onclick="estudos()">Estudos</button>
+                </div>
+                <div class="descs">
+                    <h3 style="color: #f200ff" id="titulo">Estágiario em Design Gráfico</h3>
+                    <p id="descricao">Criava artes para área de Social Media, ajudava com posts diários para as redes sociais.</p>
+                    <h4 style="color: #f200ff" id="tempo">03/2023 - Atual</h4>
+                </div>
+            </div>
+        </div>
+    </div>
     
+
     <!---CONTATO-->
 
     <div id="contato">
             <div class="container reveal">
-                <h2 class="about">Contato</h2>
+                <h2 class="textos">Contato</h2>
                 <div class="aaa">
                 <form action="https://formsubmit.co/terukimateus@outlook.com" method="POST" class="form">
                     <label for="name">Nome:</label>
@@ -116,13 +136,11 @@
                     <textarea name="message" required></textarea>
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="http://terukimateus.github.io/assets/pages/thanks.html">
-                    <button type="submit"><i class="fa-regular fa-paper-plane" style="color: #000000;"></i></button>
+                    <button type="submit"><i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i></button>
                 </form>
             </div>
             </div>
     </div>
-
-
 
     <!--FOOTER-->
 

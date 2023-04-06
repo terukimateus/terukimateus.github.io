@@ -75,6 +75,34 @@ function reveal() {
     })
   }
   
-  
+  ///EXPERIENCIAS///
+  function saura() {
+    const saura = document.querySelector('#saura')
+    const estudos = document.querySelector('#estudos')
+    const texto = document.querySelector('#descricao')
+    const titulo = document.querySelector('#titulo')
+    const tempo = document.querySelector('#tempo')
+
+    saura.classList.add("ativo")
+    estudos.classList.remove("ativo")
+
+    titulo.innerHTML = "Estágiario em Design Gráfico"
+    texto.innerHTML = "Criava artes para área de Social Media, ajudava com posts diários para as redes sociais."
+    tempo.innerHTML = "03/2023 - Atual"
+  }
+
+  function estudos() {
+    const saura = document.querySelector('#saura')
+    const estudos = document.querySelector('#estudos')
+    const texto = document.querySelector('#descricao')
+    const titulo = document.querySelector('#titulo')
+    const tempo = document.querySelector('#tempo')
+
+    saura.classList.remove("ativo")
+    estudos.classList.add("ativo")
+    titulo.innerHTML = "Engenharia de Software - Graduação"
+    texto.innerHTML = "O Engenheiro de software ajuda a solucionar de maneira personalizada os problemas de uma empresa, criando ferramentas para isso."
+    tempo.innerHTML = "Primeiro semestre"
+  }
 
   //////////////
