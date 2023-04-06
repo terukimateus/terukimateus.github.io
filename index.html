@@ -16,15 +16,37 @@
     <!--TEXT APRESENTATION-->
 
 
+    <div class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="assets/images/logo.png">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#text" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#experiencias" class="nav-link">Experiências</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
 
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/images/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a onclick="menuHide()" href="#text" class="nav-link">Início</a></li>
+                <li class="nav-item"><a onclick="menuHide()" href="#about" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a onclick="menuHide()" href="#projetos" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a onclick="menuHide()" href="#experiencias" class="nav-link">Experiências</a></li>
+                <li class="nav-item"><a onclick="menuHide()" href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </header>
     
     <div id="text">
-            <nav class="navbar">
-                <a href="#title">Início</a>
-                <a href="#about">Sobre</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#contato">Contato</a>
-            </nav>
             <div class="title">
                 <h1><span class="color-highlight">Olá,</span> meu nome é <span class="color-highlight">Mateus Teruki!</span></h1>
                 <p>Sou programador focado na área de front-end, como web-developer.</p>
@@ -53,23 +75,25 @@
     <!--Sobre mim-->
     <div id="about">
         <div class="container reveal">
-            <h2 class="textos">Sobre mim</h2>
             <div class="about-photo">
                 <img id="photo" src="assets/images/me.webp">
             </div>
+            <div class="about-desc">
+                <h2 class="textos">Sobre mim<span class="color-highlight">.</span></h2>
 
-            <p class="about">Sou estudante de engenharia de software, trabalho atualmente como estagiário em design gráfico.
-              <br>  Estudo as linguagens JavaScript, HTML5 e CSS3, focado atualmente na área de front-end web-developer.
-                <br>Também tenho vasta experiência em Adobe Photoshop e After Effects.
-            </p>
+                <p>Sou estudante de engenharia de software, trabalho atualmente como estagiário em design gráfico.
+                <br>  Estudo as linguagens JavaScript, HTML5 e CSS3, focado atualmente na área de front-end web-developer.
+                 <br>Também tenho vasta experiência em Adobe Photoshop e After Effects.
+                </p>
+            </div>
         </div>
     </div>
 
     <!--Projetos-->
 
     <div id="projetos">
-        <div class="container reveal">
-            <h2 class="textos">Projetos</h2>
+        <div class="projects reveal">
+            <h2 class="textos">Projetos<span class="color-highlight">.</span></h2>
             <div class="container-projects">
                 <div onclick="abrirModal()" class="itens">
                     <img src="assets/images/weather.webp">
@@ -105,16 +129,18 @@
 
     <div id="experiencias">
          <div class="container reveal">
-            <h2 class="textos" style="color: white;">Experiencias</h2>
             <div class="experiencias">
-                <div class="botoes">
-                    <button id="saura" class="experiencia-button ativo" onclick="saura()">Saura MaisBB</button>
-                    <button id="estudos" class="experiencia-button" onclick="estudos()">Estudos</button>
+                <div class="experiences">
+                    <h2 class="textos" style="color: white;">Experiências<span class="color-highlight">.</span></h2>
+                        <div class="botoes">
+                            <button id="saura" class="experiencia-button ativo" onclick="saura()">Saura MaisBB</button>
+                            <button id="estudos" class="experiencia-button" onclick="estudos()">Estudos</button>
+                        </div>
                 </div>
                 <div class="descs">
-                    <h3 style="color: #f200ff" id="titulo">Estágiario em Design Gráfico</h3>
+                    <h3 style="color: #f200ff; font-weight: 200;" id="titulo">Estágiario em Design Gráfico</h3>
                     <p id="descricao">Criava artes para área de Social Media, ajudava com posts diários para as redes sociais.</p>
-                    <h4 style="color: #f200ff" id="tempo">03/2023 - Atual</h4>
+                    <h3 style="color: #f200ff; font-weight: 200;" id="tempo">03/2023 - Atual</h4>
                 </div>
             </div>
         </div>
@@ -125,7 +151,7 @@
 
     <div id="contato">
             <div class="container reveal">
-                <h2 class="textos">Contato</h2>
+                <h2 class="textos">Contato<span class="color-highlight">.</span></h2>
                 <div class="aaa">
                 <form action="https://formsubmit.co/terukimateus@outlook.com" method="POST" class="form">
                     <label for="name">Nome:</label>

@@ -2,11 +2,16 @@
 
 /* ESSENTIALS */
 
+@font-face {
+    font-family: 'SF Pro Display', sans-serif;
+    src: url(../fonts/SF-Pro-Display.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
     color: white;
+    font-family: 'SF Pro Display', sans-serif;
     box-sizing: border-box;
     overflow-x:hidden;
 }
@@ -40,6 +45,10 @@
     opacity: 1;
   }
 
+a {
+    text-decoration: none;
+}
+
 html {
     color: black;
 	scroll-behavior: smooth;
@@ -60,34 +69,93 @@ div#text {
 }
 
 .container {
-    display: flexbox;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
-    flex-direction: column;
+    justify-items: center;
     padding: 4em;
     gap: 1.5rem;
 }
 
-a {
-    text-decoration: none;
-    font-size: 20px;
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    padding: 4em;
+    gap: 1.5rem;
 }
 
-a:hover {
-    transition: 1.0s;
+/* NAVBAR */
+
+
+.nav-bar {
+    background-color: #000000;
+    z-index: 11111;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+
+.nav-item {
+    margin: 0 1em;
+}
+
+.nav-link {
+    transition: 1s;
+    text-decoration: none;
+    font-size: 1.10em;
+    color: #fff;
+    font-weight: 200;
+}
+
+.nav-link:hover {
     color: #bf19ff;
 }
 
-.navbar {
-    display: flex;
-    padding-top: 2rem;
-    padding-right: 3rem;
-    justify-content:right;
-    gap: 2rem;
+.mobile-menu-icon {
+    display: none;
 }
+
+.mobile-menu {
+    display: none;
+    background-color: #000000;
+    z-index: 1111;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ------ */
 
 .textos {
     font-size: 2em;
+    height: fit-content;
 }
 
 .title {
@@ -119,6 +187,15 @@ a:hover {
     justify-content: center;
     justify-items: center;
 }
+
+.about-desc {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    text-align: start;
+    gap: 1em;
+}
+
 
 #photo {
     width: 30rem;
@@ -194,6 +271,13 @@ a:hover {
 
 /*EXPERIENCIAS*/
 
+.experiences {
+    flex-direction: column;
+
+    gap: 2em;
+    display: flex;
+}
+
 #experiencias {
     height: 25em;
     background-color: rgb(28, 28, 28);
@@ -205,7 +289,6 @@ a:hover {
     justify-items: center;
     justify-content: center;
     text-align: start;
-    margin-top: 4em;
     gap: 4em;
 }
 
@@ -213,6 +296,7 @@ a:hover {
     width: 30%;
     display: flex;
     flex-direction: column;
+    margin-top: 4em;
     gap: 1em;
 }
 
@@ -319,7 +403,7 @@ div#contato {
     display: none;
     justify-content: center;
     align-items: center;    
-    z-index: 99;
+    z-index: 999999;
 }
 
 .janela-modal.abrir {
@@ -420,6 +504,39 @@ iframe {
         height: 90%;
         flex-direction: column;
     }    
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu {
+        position: fixed;
+    }
+    .logo img {
+        width: 17em;
+    }
+    .mobile-menu-icon {
+        display: block;
+        height: 3em;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 7rem;
+    }
+    .open {
+        display: block;
+    }
+
 }
 
 
@@ -427,11 +544,21 @@ iframe {
     .modal {
         width: 80%;
     }    
-
+    .about-desc {
+        text-align: center;
+    }
+    .container {
+        flex-direction: column;
+    }
     .modal button.button-projeto {
         width: 60%;
         height: 4em;
     }
+
+    a {
+        font-size: 0.8em;
+    }
+
     #experiencias {
         height: 35em;
     }
@@ -456,7 +583,7 @@ iframe {
 
 @media screen and (max-width: 441px) {
     .title {
-        margin-top: 3em;
+        margin-top: 5em;
     }
     .container-projects { 
         flex-direction:column;
@@ -464,9 +591,6 @@ iframe {
   }
 
   @media screen and (max-width: 400px) {
-    .navbar {
-        padding-right: 1em;
-    }
     .title {
         margin-left: 2em;
         font-size: 1.3em;
