@@ -464,8 +464,7 @@ div#contato {
 
 .fechar {
     position: fixed;
-    top: 1.5em;
-    right: 3.5em;
+    left: 60em;
     width: 2em;
     height: 2em;
     background-color: red;
@@ -544,6 +543,9 @@ iframe {
     .modal {
         width: 80%;
     }    
+    .fechar {
+        left: 15em;
+    }
     .about-desc {
         text-align: center;
     }
