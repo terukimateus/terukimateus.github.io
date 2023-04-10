@@ -96,6 +96,9 @@ div#text {
 
 .nav-bar {
     background-color: #000000;
+    -webkit-box-shadow: 0px 0.3px 0px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0.3px 0px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0.3px 0px 0px rgba(255,255,255,1);
     z-index: 11111;
     position: fixed;
     width: 100%;
@@ -114,13 +117,14 @@ div#text {
 }
 
 .nav-list {
-    display: flex;
+    display: none;
     align-items: center;
+    padding-left: 15em;
+    transition: opacity .5s linear;
 }
 
 .nav-list ul {
     display: flex;
-    justify-content: center;
     list-style: none;
 }
 
@@ -137,6 +141,16 @@ div#text {
     font-weight: 200;
 }
 
+.hamburger-icon {
+    display: block;
+}
+
+.hamburger-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .nav-link:hover {
     color: #bf19ff;
 }
@@ -147,10 +161,15 @@ div#text {
 
 .mobile-menu {
     display: none;
-    background-color: #000000;
+    background-color: #070707;
     z-index: 1111;
     height: 100%;
     width: 100%;
+}
+
+.open {
+    display: flex;
+    animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
 
@@ -206,6 +225,7 @@ div#text {
 
 .color-highlight {
     color: #bf19ff;
+    font-weight: 900;
 }
 
 
@@ -496,6 +516,18 @@ iframe {
     }
 }
 
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 .abrir .modal {
     animation: abrirmodal 0.5s;
 }
@@ -517,11 +549,19 @@ iframe {
     .nav-item {
         display: none;
     }
+    .open {
+        display: block;
+        animation: myAnim 0.5s ease 0s 1 normal forwards;
+    }
+    
     .mobile-menu {
         position: fixed;
     }
     .logo img {
         width: 17em;
+    }
+    .hamburger-icon {
+        display: none;
     }
     .mobile-menu-icon {
         display: block;
@@ -537,12 +577,10 @@ iframe {
         flex-direction: column;
         text-align: center;
     }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 7rem;
-    }
-    .open {
-        display: block;
     }
 
 }

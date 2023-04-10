@@ -109,7 +109,7 @@ function reveal() {
 
   function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu')
-
+    
     if (menuMobile.classList.contains('open')) {
       menuMobile.classList.remove('open')
       document.querySelector('.icon').src = "assets/images/menu_white_36dp.svg";
@@ -124,4 +124,17 @@ function reveal() {
 
     menuMobile.classList.remove('open')
     document.querySelector('.icon').src = "assets/images/menu_white_36dp.svg";
+  }
+
+
+  function pcShow() {
+    let menu = document.querySelector('.nav-list')
+    
+    if (menu.classList.contains('open')) {
+      menu.classList.remove('open')
+      document.querySelector('.icon').src = "assets/images/menu_white_36dp.svg";
+    } else {
+      menu.classList.add('open')
+      document.querySelector('.icon').src = "assets/images/close_white_36dp.svg";
+    }
   }
