@@ -319,7 +319,7 @@ div#text {
     width: 30%;
     display: flex;
     flex-direction: column;
-    margin-top: 4em;
+    margin-top: 4.3em;
     gap: 1em;
 }
 
@@ -351,6 +351,17 @@ div#contato {
     height: 32em;
     background-color: #000000;
 }
+
+.container-contato {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    overflow-y: hidden;
+    padding-top: 2em;
+    gap: 1.5rem;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -608,6 +619,9 @@ iframe {
         margin-left: 2em;
         font-size: 1.3em;
     }
+    .container-projects {
+        gap: 0em;
+    }
 }
 
 
@@ -645,7 +659,7 @@ iframe {
     }
     .experiencias {
         flex-direction: column;
-        gap:1.3em;
+        gap:0em;
     }
     .experiencia-button {
         width: 70%;
@@ -656,6 +670,7 @@ iframe {
 
     .descs {
         width: 80%;
+        margin-top: 2.3em;
     } 
     iframe {
         width: 100%;
