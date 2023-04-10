@@ -466,6 +466,8 @@ div#contato {
 }
 
 .fechar {
+    position: fixed;
+    left: 60em;
     width: 2em;
     height: 2em;
     background-color: red;
@@ -498,17 +500,23 @@ iframe {
     animation: abrirmodal 0.5s;
 }
 
+@media screen and (max-width: 1360px) {
+    .fechar {
+        left: 55em;
+    }
+}
+
+
 @media screen and (max-width: 1255px) {
     .modal {
         width: 80%;
         height: 90%;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
     }    
-
     .nav-item {
         display: none;
     }
-
     .mobile-menu {
         position: fixed;
     }
@@ -539,12 +547,46 @@ iframe {
 
 }
 
+@media screen and (max-width: 1360px) {
+    .fechar {
+        left: 45em;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .fechar {
+        left: 35em;
+    }
+    .modal {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .title {
+        margin-left: 2em;
+        font-size: 1.3em;
+    }
+}
+
 
 @media screen and (max-width: 520px) {
+    
     .modal {
-        width: 80%;
-        border-radius: 4em;
-    }    
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }  
+    .fechar {
+        left: 21.5em;
+        top: 1em;
+    }
+    .desc {
+        margin-top: 0em;
+    }  
     .about-desc {
         text-align: center;
     }
@@ -590,22 +632,11 @@ iframe {
         flex-direction:column;
     }
   }
-
-  @media screen and (max-width: 400px) {
-    .title {
-        margin-left: 2em;
-        font-size: 1.3em;
-    }
-  }
-
-  @media screen and (max-width: 390px) {
-    .modal {
-        width: 90%;
-    }    
-}
-
-    @media screen and (max-width: 320px) {
+@media screen and (max-width: 370px) {
         .modal {
             width: 100%;
+        }
+        .fechar {
+            left: 18em;
         }
     }
