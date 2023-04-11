@@ -112,10 +112,10 @@ function reveal() {
     
     if (menuMobile.classList.contains('open')) {
       menuMobile.classList.remove('open')
-      document.querySelector('.icon').src = "assets/images/menu_white_36dp.svg";
+      document.querySelector('.icon1').src = "assets/images/menu_white_36dp.svg";
     } else {
       menuMobile.classList.add('open')
-      document.querySelector('.icon').src = "assets/images/close_white_36dp.svg";
+      document.querySelector('.icon1').src = "assets/images/close_white_36dp.svg";
     }
   }
 
@@ -123,7 +123,7 @@ function reveal() {
     let menuMobile = document.querySelector('.mobile-menu')
 
     menuMobile.classList.remove('open')
-    document.querySelector('.icon').src = "assets/images/menu_white_36dp.svg";
+    document.querySelector('.icon1').src = "assets/images/menu_white_36dp.svg";
   }
 
 

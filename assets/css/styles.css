@@ -35,9 +35,9 @@
 
   .reveal{
     position: relative;
-    transform: translateX(-2em);
+    transform: translateY(-2em);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 1.5s all ease;
   }
   
   .reveal.active{
@@ -66,7 +66,7 @@ p {
 
 div#text {
     background-color: black;
-    height: 40rem;
+    height: 50rem;
     overflow-y: hidden;
     max-width: 95em;
 }
@@ -182,7 +182,7 @@ div#text {
 
 .title {
     font-size: 1.5em;
-    margin-top: 10em;
+    margin-top: 14em;
     margin-left: 5em;
     margin-right: 5em;
     width: fit-content;
@@ -213,7 +213,7 @@ div#text {
 .about-desc {
     display: flex;
     flex-direction: column;
-    padding-top: 10%;
+    padding-top: 7%;
     text-align: start;
     gap: 1em;
 }
@@ -221,6 +221,9 @@ div#text {
 
 #photo {
     width: 30em;
+    height: 25em;
+    object-fit: cover;
+    border-radius: 5em;
 }
 
 .color-highlight {
@@ -228,6 +231,30 @@ div#text {
     font-weight: 900;
 }
 
+
+.habilities {
+    display: flex;
+    gap: 2em;
+}
+
+.icon-habilities {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 5em;
+    height: 4.5em;
+    background-color: #202020;
+    border: 0.1em solid #525252;
+    -webkit-border: 0.1em solid #525252;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+    transition: 0.5s;
+}
+
+.icon-habilities:hover {
+    border: 0.1em solid #bf19ff;
+    -webkit-border: 0.1em solid #bf19ff;
+}
 
 /* PROJETOS */
 
@@ -595,6 +622,10 @@ iframe {
         display: block;
     }
 
+
+    .habilities {
+        gap: 1em;
+    }
 }
 
 @media screen and (max-width: 1360px) {
@@ -619,6 +650,7 @@ iframe {
     .title {
         margin-left: 2em;
         font-size: 1.3em;
+        margin-top: 9em;
     }
     .container-projects {
         gap: 0em;
@@ -679,9 +711,6 @@ iframe {
 }
 
 @media screen and (max-width: 441px) {
-    .title {
-        margin-top: 5em;
-    }
     .container-projects { 
         flex-direction:column;
     }

@@ -20,7 +20,7 @@
         <nav class="nav-bar">
             <div class="logo">
                 <img src="assets/images/logo.png">
-                <a href="assets/pages/english.html" class="nav-item"><img style="width: 1.5em;" src="assets/images/united-states.png"></a>
+                <a href="assets/pages/english.html" class="nav-item"><img style="width: 1.5em;" src="assets/images/united-states.webp"></a>
             </div>
             <div class="nav-list">
                 <ul>
@@ -37,7 +37,7 @@
             </div>
 
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/images/menu_white_36dp.svg" alt=""></button>
+                <button onclick="menuShow()"><img class="icon1" src="assets/images/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
         <div class="mobile-menu">
@@ -47,7 +47,7 @@
                 <li class="nav-item"><a onclick="menuHide()" href="#projetos" class="nav-link">Projetos</a></li>
                 <li class="nav-item"><a onclick="menuHide()" href="#experiencias" class="nav-link">Experiências</a></li>
                 <li class="nav-item"><a onclick="menuHide()" href="#contato" class="nav-link">Contato</a></li>
-                <li class="nav-item"><a onclick="menuHide()" href="assets/pages/english.html" class="nav-link"><img style="width: 1.5em;" src="assets/images/united-states.png"></a></li>
+                <li class="nav-item"><a onclick="menuHide()" href="assets/pages/english.html" class="nav-link"><img style="width: 1.5em;" src="assets/images/united-states.webp"></a></li>
             </ul>
         </div>
     </header>
@@ -67,7 +67,7 @@
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
-        minHeight: 400.00,
+        minHeight: 500.00,
         minWidth: 410.00,
         scale: 1.00,
         size: 2.00,
@@ -82,15 +82,29 @@
     <div id="about">
         <div class="container reveal">
             <div class="about-photo">
-                <img id="photo" src="assets/images/me.webp">
+                <img id="photo" src="assets/images/eu.webp">
             </div>
             <div class="about-desc">
                 <h2 class="textos">Mateus Teruki<span class="color-highlight">.</span></h2>
-                <h3>Desenvolvedor Front-End</h3>
+                <h3>Desenvolvedor <span class="color-highlight">Front-End</span></h3>
 
                 <p>Meu nome é Mateus Teruki, sou desenvolvedor front-end, estou cursando Engenharia de Software.
                     <br>Atualmente atuo na área de Design Gráfico, como Estágiario na Saura MaisBB.
                 </p>
+                <div class="habilities reveal">
+                    <div class="icon-habilities">
+                        <i class="fa-brands fa-js fa-3x" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="icon-habilities">
+                        <i class="fa-brands fa-html5 fa-3x" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="icon-habilities">
+                        <i class="fa-brands fa-css3 fa-3x" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="icon-habilities">
+                        <i class="fa-brands fa-github fa-3x" style="color: #ffffff;"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
