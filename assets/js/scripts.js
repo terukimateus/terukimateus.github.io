@@ -105,7 +105,7 @@ function reveal() {
     tempo.innerHTML = "Primeiro semestre"
   }
 
-  //////////////
+  //////nav-bar////////
 
   function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu')
