@@ -113,13 +113,13 @@ div#text {
 }
 
 .logo img {
-    width: 20%;
+    width: 15%;
 }
 
 .nav-list {
     display: none;
     align-items: center;
-    padding-left: 30em;
+    padding-left: 3em;
     transition: opacity .5s linear;
 }
 
@@ -605,7 +605,7 @@ iframe {
         position: fixed;
     }
     .logo img {
-        width: 5em;
+        width: 8em;
     }
     .hamburger-icon {
         display: none;
