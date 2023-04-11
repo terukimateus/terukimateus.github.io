@@ -13,18 +13,43 @@ const tempo_t = document.querySelector('.tempo');
 const menor_maior = document.querySelector('.menor-maior');
 const img_caixa = document.querySelector('.img-caixa');
 
-//const confirmar = () => {
-    //city1.innerHTML = ('Sua cidade e: ' + city.value)
-    //document.getElementById('city').remove()
-    //document.getElementById('cid1').remove()
-    //document.getElementById('confirmar').remove()
-//}
+window.addEventListener('load', () => {
+    //if ("geolocation" in navigator)
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(setPosition, showError);
+    }
+    else {
+        alert('navegador não suporta geolozalicação');
+    }
+    function setPosition(position) {
+        console.log(position)
+        let lat = position.coords.latitude;
+        let long = position.coords.longitude;
+        coordResults(lat, long);
+    }
+    function showError(error) {
+        alert(`Usuario negou a GeoLocalizacao`);
+    }
+})
+
+function coordResults(lat, long) {
+    fetch(`${api.base}weather?lat=${lat}&lon=${long}&lang=${api.lang}&units=${api.units}&APPID=${api.key}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`http error: status ${response.status}`)
+            }
+            return response.json();
+        })
+        .catch(error => {
+            alert(error.message)
+        })
+        .then(response => {
+            resultados(response)
+        });
+}
+
 
 function tempo() {
-    var informacoes = document.querySelector('#informacoes')
-    informacoes.style.visibility = 'visible'
-
-    
     var city = document.querySelector('#city').value
     fetch(`${api.base}weather?q=${city}&lang=${api.lang}&units=${api.units}&APPID=${api.key}`) // fetch busca recursos da base da api // 
         .then(response => { // se nao der resposta ele responde o erro. //
@@ -43,6 +68,9 @@ function tempo() {
 }
 
 function resultados(weather) {
+    var informacoes = document.querySelector('#informacoes')
+    informacoes.style.visibility = 'visible'
+
     console.log(weather)
 
     cidade.innerText = `${weather.name}, ${weather.sys.country}` // troca a div cidade pra cidade e pais que foi escrito
