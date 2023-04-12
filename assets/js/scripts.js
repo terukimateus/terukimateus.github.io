@@ -75,6 +75,23 @@ function reveal() {
     })
   }
   
+
+  function abrirSiroti() {
+    const modal = document.getElementById('siroti-modal')
+    modal.classList.add('abrir')
+
+    modal.addEventListener('click', (e) => {
+      if(e.target.id == 'fechar' || e.target.id == 'siroti-modal') {
+        modal.classList.remove('abrir')
+      }
+      window.addEventListener('keydown', function (event) {
+        const modal = document.getElementById('siroti-modal')
+      if (event.key === 'Escape') {
+        modal.classList.remove('abrir')
+      }
+    })    
+    })
+  }
   ///EXPERIENCIAS///
   function saura() {
     const saura = document.querySelector('#saura')
