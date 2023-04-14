@@ -10,7 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://kit.fontawesome.com/276f9ca786.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-    <title>Mateus Teruki</title>
+    <title>Teruki | dev</title>
+    <link rel="icon" type="image/webp" href="../images/logo.webp"/>
 </head>
 <body>
     <!--TEXT APRESENTATION-->
@@ -91,20 +92,7 @@
                 <p>My name is Mateus Teruki, I'm a front-end developer and I'm currently studying Software Engineering.
                     <br>I'm currently working in the Graphic Design field as an intern at Saura MaisBB.
                 </p>
-                <div class="habilities reveal">
-                    <div class="icon-habilities">
-                        <i class="fa-brands fa-js fa-3x" style="color: #ffffff;"></i>
-                    </div>
-                    <div class="icon-habilities">
-                        <i class="fa-brands fa-html5 fa-3x" style="color: #ffffff;"></i>
-                    </div>
-                    <div class="icon-habilities">
-                        <i class="fa-brands fa-css3 fa-3x" style="color: #ffffff;"></i>
-                    </div>
-                    <div class="icon-habilities">
-                        <i class="fa-brands fa-github fa-3x" style="color: #ffffff;"></i>
-                    </div>
-                </div>
+                <button class="icon-habilities reveal"onclick="abrirInfo()">More info</a>
             </div>
         </div>
     </div>
@@ -138,7 +126,7 @@
                     <figcaption>Portfolio</figcaption>
                 </div>
                 <div onclick="abrirSiroti()" class="itens">
-                    <img src="../images/bank.png">
+                    <img src="../images/bank.webp">
                     <figcaption>Siroti Bank</figcaption>
                 </div>
             </div>
@@ -302,5 +290,35 @@
         </div>
     </div>
 
+    <div class="janela-modal" id="info-modal">
+        <div class="info-modal">
+            <div class="photo-modal">
+                <img id="photo-modal" src="../images/eu.webp">
+            </div>
+            <div class="text">
+                <h1 style="color: #bf19ff;">Mateus Teruki</h1>
+                <p>My name is Mateus Teruki, I am a Front-End programmer, and I have the skills listed below. Since I was young, I have been passionate about technology, a passion that recently blossomed when I discovered the world of programming. This is a world that I have known for a short time, but it is already my favorite.</p>
+                <div class="habilidades">
+                    <div class="hability">
+                        <i class="fa-brands fa-js fa-3x" style="color: #fff;"></i>
+                    </div>
+                    <div class="hability">
+                        <i class="fa-brands fa-html5 fa-3x" style="color: #fff;"></i>
+                    </div>
+                    <div class="hability">
+                        <i class="fa-brands fa-css3 fa-3x" style="color: #fff;"></i>
+                    </div>
+                    <div class="hability">
+                        <i class="fa-brands fa-sass fa-3x" style="color: #fff;"></i>
+                    </div>
+                    <div class="hability">
+                        <i class="fa-brands fa-github fa-3x" style="color: #fff;"></i>
+                    </div>
+    
+                </div>
+
+            </div>
+            <button class="fechar" id="fechar">X</button>
+        </div>
 </body>
 </html>

@@ -92,6 +92,23 @@ function reveal() {
     })    
     })
   }
+
+  function abrirInfo() {
+    const modal = document.getElementById('info-modal')
+    modal.classList.add('abrir')
+
+    modal.addEventListener('click', (e) => {
+      if(e.target.id == 'fechar' || e.target.id == 'info-modal') {
+        modal.classList.remove('abrir')
+      }
+      window.addEventListener('keydown', function (event) {
+        const modal = document.getElementById('info-modal')
+      if (event.key === 'Escape') {
+        modal.classList.remove('abrir')
+      }
+    })    
+    })
+  }
   ///EXPERIENCIAS///
   function saura() {
     const saura = document.querySelector('#saura')

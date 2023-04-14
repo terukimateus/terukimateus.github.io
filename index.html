@@ -9,7 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://kit.fontawesome.com/276f9ca786.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-    <title>Mateus Teruki</title>
+    <title>Teruki | dev</title>
+    <link rel="icon" type="image/webp" href="assets/images/logo.webp"/>
 </head>
 <body>
 
@@ -93,20 +94,7 @@
                 <p>Meu nome é Mateus Teruki, sou desenvolvedor front-end, estou cursando Engenharia de Software.
                     <br>Atualmente atuo na área de Design Gráfico, como Estágiario na Saura MaisBB.
                 </p>
-                <div class="habilities reveal">
-                    <div class="icon-habilities">
-                        <i class="fa-brands fa-js fa-3x" style="color: #ffffff;"></i>
-                    </div>
-                    <div class="icon-habilities">
-                        <i class="fa-brands fa-html5 fa-3x" style="color: #ffffff;"></i>
-                    </div>
-                    <div class="icon-habilities">
-                        <i class="fa-brands fa-css3 fa-3x" style="color: #ffffff;"></i>
-                    </div>
-                    <div class="icon-habilities">
-                        <i class="fa-brands fa-github fa-3x" style="color: #ffffff;"></i>
-                    </div>
-                </div>
+                <button class="icon-habilities reveal"onclick="abrirInfo()">Mais informações</a>
             </div>
         </div>
     </div>
@@ -140,7 +128,7 @@
                     <figcaption>Portfólio</figcaption>
                 </div>
                 <div onclick="abrirSiroti()" class="itens">
-                    <img src="assets/images/bank.png">
+                    <img src="assets/images/bank.webp">
                     <figcaption>Siroti Bank</figcaption>
                 </div>
             </div>
@@ -226,7 +214,10 @@
                     <i class="fa-brands fa-html5" style="color: #fff;"></i>
                 </p>
 
-                <p>Web-site simples, feito para descobrir informações básicas <br>sobre o clima atual da cidade desejada.</p>
+                <p>Web-site feito em JavaScript, HTML5 e CSS3. 
+                    <br>A sua função é demonstrar as informações climáticas do seu local atual ou do digitado pelo usuário.
+                    <br>As informações são recolhidas via API Rest.
+                </p>
                 <p>Versão 1.0.1</p>
             </div>
             <button class="fechar" id="fechar">X</button>   
@@ -265,7 +256,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
                 allowfullscreen></iframe>
             </div>
-            <div class="text">
+            <div class="desc">
                 <h1 style="color: #bf19ff;">Portfólio</h1>
                 <p class="itens-languages">
                     <i class="fa-brands fa-js" style="color: #fff;"></i>
@@ -289,7 +280,7 @@
                 allowfullscreen></iframe>
                 <button class="button-projeto" onclick="window.open(url='https://sirotibank.vercel.app/')">Para acessar o projeto, clique aqui.</button>
             </div>
-            <div class="text">
+            <div class="desc">
                 <h1 style="color: #bf19ff;">Siroti Bank</h1>
                 <p class="itens-languages">
                     <i class="fa-brands fa-js" style="color: #fff;"></i>
@@ -297,8 +288,42 @@
                     <i class="fa-brands fa-html5" style="color: #fff;"></i>
                 </p>
 
-                <p>Web-site fícticio para Banco Digital.</p>
+                <p>Web-site fícticio para Banco Digital.<br> Totalmente responsivo para celulares e tablets.</p>
                 <p>Versão 1.0</p>
+            </div>
+            <button class="fechar" id="fechar">X</button>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="info-modal">
+        <div class="info-modal">
+            <div class="photo-modal">
+                <img id="photo-modal" src="assets/images/eu.webp">
+            </div>
+            <div class="text">
+                <h1 style="color: #bf19ff;">Mateus Teruki</h1>
+                <p>Meu nome é Mateus Teruki, sou programador Front-End, tenho as habilidades listadas a baixo. <br>
+                Desde pequeno sou apaixonado por tecnologia, paixão essa que se aflorou recentemente ao descobrir o mundo da programação.<br>
+                Mundo esse que conheço a pouco tempo, mas já é o meu favorito.</p>
+                <div class="habilidades">
+                    <div class="hability">
+                        <i class="fa-brands fa-js fa-3x" style="color: #fff;"></i>
+                    </div>
+                    <div class="hability">
+                        <i class="fa-brands fa-html5 fa-3x" style="color: #fff;"></i>
+                    </div>
+                    <div class="hability">
+                        <i class="fa-brands fa-css3 fa-3x" style="color: #fff;"></i>
+                    </div>
+                    <div class="hability">
+                        <i class="fa-brands fa-sass fa-3x" style="color: #fff;"></i>
+                    </div>
+                    <div class="hability">
+                        <i class="fa-brands fa-github fa-3x" style="color: #fff;"></i>
+                    </div>
+    
+                </div>
+
             </div>
             <button class="fechar" id="fechar">X</button>
         </div>
