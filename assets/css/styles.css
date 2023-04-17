@@ -260,48 +260,98 @@ div#text {
 
 
 #projetos {
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    overflow-y: hidden;
     background-color: #000000;
 }
 
 
-.container-projects {
+
+
+section.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+}
+
+.slider-content {
+    width: 500%;
+    height: auto;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
-    overflow-y: hidden;
-    padding-top: 1em;
-    gap: 4.5rem;
 }
 
-.itens {
-    padding-top: 2em;
-    transition: all 0.3s;
-    cursor: pointer;
-  }
-
-.itens:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-    filter: brightness(150%);
+.slider-content input, .img-mobile {
+    display: none;
 }
 
-.itens img {
-    transition: all 0.1s;
-    width: 20rem;
-    height: 13rem;
-    filter: brightness(50%);
-    border-bottom: 0.35em solid #f200ff;
-}
-
-.itens figcaption {
+.slide-box {
+    width: 20%;
+    height: auto;
     position: relative;
-    top: -5em;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    z-index: 2;
-  }
+    text-align: center;
+    transition: 1s;
+    cursor: pointer;
+}
 
+.slide-box img {
+    width: 100%;
+
+}
+
+.nav-manual, .nav-auto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 35%;
+}
+
+.nav-manual .manual-btn, .nav-auto div {
+    border: 1px solid #bf19ff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #bf19ff;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4, #radio5:checked ~ .nav-auto .auto-btn5 {
+    background-color: #bf19ff;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro {
+    margin-left: -20%;
+}
+#radio3:checked ~ .primeiro {
+    margin-left: -40%;
+}
+#radio4:checked ~ .primeiro {
+    margin-left: -60%;
+}
+#radio5:checked ~ .primeiro {
+    margin-left: -80%;
+}
+
+.infopic {
+    padding: 4em;
+}
 .github {
     transition: 1.2s;
     color: rgb(255, 255, 255);
@@ -578,7 +628,7 @@ div#contato {
 
 .fechar {
     position: fixed;
-    left: 60em;
+    left: 55em;
     width: 2em;
     height: 2em;
     background-color: red;
@@ -715,6 +765,19 @@ iframe {
         width: 100%;
         height: 100%;
         border-radius: 0;
+    }
+    .infopic {
+        margin-top: 10%;
+    }
+    .img-desktop {
+        display: none;
+    }
+    .img-mobile {
+        height: 100%;
+        display: block;
+    }
+    .nav-auto, .nav-manual {
+        margin-top: 60%;
     }
 }
 

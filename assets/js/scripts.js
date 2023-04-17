@@ -40,24 +40,6 @@ function reveal() {
     })
   }
 
-  function abrirCronometro() {
-    const modal = document.getElementById('cronometro-modal')
-    modal.classList.add('abrir')
-
-    modal.addEventListener('click', (e) => {
-      if(e.target.id == 'fechar' || e.target.id == 'cronometro-modal') {
-        modal.classList.remove('abrir')
-      }
-      window.addEventListener('keydown', function (event) {
-        const modal = document.getElementById('cronometro-modal')
-      if (event.key === 'Escape') {
-        modal.classList.remove('abrir')
-      }
-    })
-    
-    })
-  }
-
   function abrirPortfolio() {
     const modal = document.getElementById('portfolio-modal')
     modal.classList.add('abrir')
@@ -86,6 +68,41 @@ function reveal() {
       }
       window.addEventListener('keydown', function (event) {
         const modal = document.getElementById('siroti-modal')
+      if (event.key === 'Escape') {
+        modal.classList.remove('abrir')
+      }
+    })    
+    })
+  }
+
+  function abrirNetflix() {
+    const modal = document.getElementById('netflix-modal')
+    modal.classList.add('abrir')
+
+    modal.addEventListener('click', (e) => {
+      if(e.target.id == 'fechar' || e.target.id == 'netflix-modal') {
+        modal.classList.remove('abrir')
+      }
+      window.addEventListener('keydown', function (event) {
+        const modal = document.getElementById('netflix-modal')
+      if (event.key === 'Escape') {
+        modal.classList.remove('abrir')
+      }
+    })    
+    })
+  }
+
+
+  function abrirLogin() {
+    const modal = document.getElementById('login-modal')
+    modal.classList.add('abrir')
+
+    modal.addEventListener('click', (e) => {
+      if(e.target.id == 'fechar' || e.target.id == 'login-modal') {
+        modal.classList.remove('abrir')
+      }
+      window.addEventListener('keydown', function (event) {
+        const modal = document.getElementById('login-modal')
       if (event.key === 'Escape') {
         modal.classList.remove('abrir')
       }
@@ -171,4 +188,23 @@ function reveal() {
       menu.classList.add('open')
       document.querySelector('.icon').src = "assets/images/close_white_36dp.svg";
     }
+  }
+
+  /////SLIDER///
+
+  var radio = document.querySelector('.manual-btn')
+  var cont = 1
+  document.getElementById('radio1').checked = true
+
+  setInterval(() => {
+    proximaImg()
+  }, 5000)
+
+  function proximaImg() {
+    cont++
+
+    if(cont > 5){
+      cont = 1
+    }
+    document.getElementById('radio'+cont).checked = true
   }

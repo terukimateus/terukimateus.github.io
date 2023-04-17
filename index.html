@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/scripts.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://kit.fontawesome.com/276f9ca786.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
@@ -100,43 +100,60 @@
     </div>
 
     <!--Projetos-->
-
     <div id="projetos">
-        <div class="projects reveal">
-            <h2 class="textos">Projetos<span class="color-highlight">.</span></h2>
-            <div class="container-projects">
-                <div onclick="abrirModal()" class="itens">
-                    <img src="assets/images/weather.webp">
-                    <figcaption>Web Weather</figcaption>
-                    <div class="languages">
-                        <figcaption><i class="fa-brands fa-js" style="color: #bf19ff;"></i>  
-                            <i class="fa-brands fa-html5" style="color: #bf19ff;"></i>  
-                            <i class="fa-brands fa-css3-alt" style="color: #bf19ff;"></i></figcaption>
+            <section class="slider">
+                <div class="slider-content">
+
+                    <input type="radio" name="btn-radio" id="radio1">
+                    <input type="radio" name="btn-radio" id="radio2">
+                    <input type="radio" name="btn-radio" id="radio3">
+                    <input type="radio" name="btn-radio" id="radio4">
+                    <input type="radio" name="btn-radio" id="radio5">
+
+                    <div class="slide-box primeiro">
+                        <img onclick="abrirModal()"class="img-desktop" src="assets/images/weather.webp" alt="slide 1">
+                        <img onclick="abrirModal()"class="img-mobile" src="assets/images/weather_mobile.webp" alt="slide 1">
+                    </div>
+                    <div class="slide-box">
+                        <img onclick="abrirLogin()" class="img-desktop" src="assets/images/login.webp" alt="slide 2">
+                        <img onclick="abrirLogin()" class="img-mobile" src="assets/images/login_mobile.webp" alt="slide 2">
+                    </div>
+                    <div class="slide-box">
+                        <img onclick="abrirPortfolio()"class="img-desktop" src="assets/images/portfolio.webp" alt="slide 3">
+                        <img onclick="abrirPortfolio()"class="img-mobile" src="assets/images/portfolio_mobile.webp" alt="slide 3">
+                    </div>
+                    <div class="slide-box">
+                        <img onclick="abrirSiroti()" class="img-desktop" src="assets/images/siroti.webp" alt="slide 4">
+                        <img onclick="abrirSiroti()" class="img-mobile" src="assets/images/siroti_mobile.webp" alt="slide 4">
+                    </div>
+                    <div class="slide-box">
+                        <img onclick="abrirNetflix()"class="img-desktop" src="assets/images/netflix.webp" alt="slide 5">
+                        <img onclick="abrirNetflix()"class="img-mobile" src="assets/images/netflix_mobile.webp" alt="slide 5">
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                    </div>
+
+                    <div class="nav-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
                     </div>
                 </div>
-                <div onclick="abrirCronometro()" class="itens">
-                    <img src="assets/images/cronom.webp">
-                    <figcaption>Cronômetro</figcaption>
-                    <div class="languages">
-                        <figcaption><i class="fa-brands fa-js" style="color: #bf19ff;"></i>  
-                            <i class="fa-brands fa-html5" style="color: #bf19ff;"></i>  
-                            <i class="fa-brands fa-css3-alt" style="color: #bf19ff;"></i></figcaption>
-                    </div>
-                </div>
-                <div onclick="abrirPortfolio()" class="itens">
-                    <img src="assets/images/portfolio.webp">
-                    <figcaption>Portfólio</figcaption>
-                </div>
-                <div onclick="abrirSiroti()" class="itens">
-                    <img src="assets/images/bank.webp">
-                    <figcaption>Siroti Bank</figcaption>
-                </div>
+            </section>
+            <div class="infopic">
+                <p style="font-size: 1.1em; color: rgb(255, 255, 255);">Clique nas imagens para interagir!</p>
+                <a href="https://github.com/terukimateus" class="github" target="_blank">
+                    <i class="fa-brands fa-github" style="color: #bf19ff;"></i> 
+                    Para mais projetos acesse meu github!</a>
             </div>
-            <p style="font-size: 1.1em; color: rgb(255, 255, 255);">Clique nas imagens para interagir!</p>
-            <a href="https://github.com/terukimateus" class="github" target="_blank">
-                <i class="fa-brands fa-github" style="color: #bf19ff;"></i> 
-                Para mais projetos acesse meu github!</a>
-        </div>
     </div>
 
     <!--EXPERIENCIAS-->
@@ -224,27 +241,29 @@
         </div>
     </div>
 
-    <div class="janela-modal" id="cronometro-modal">
+    <div class="janela-modal" id="login-modal">
         <div class="modal">
             <div class="video">
                 <iframe class="video"
-                src="https://www.youtube.com/embed/81ISqMWEv_w" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
-                allowfullscreen></iframe>
-            </div>
+                    src="https://www.youtube.com/embed/9Ka2tofYDfg" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
+                    allowfullscreen></iframe>
+                    <button class="button-projeto" onclick="window.open(url='https://login-page-sigma-woad.vercel.app/')">Para acessar o projeto, clique aqui.</button>
+                </div>   
+            <div id="desc">
+                <h1 style="color: #bf19ff;">Login Page</h1>
+                <p class="itens-languages">
+                    <i class="fa-brands fa-js" style="color: #fff;"></i>
+                    <i class="fa-brands fa-css3" style="color: #fff;"></i>
+                    <i class="fa-brands fa-html5" style="color: #fff;"></i>
+                </p>
 
-              <div class="desc">
-                    <h1 style="color: #bf19ff;">Cronômetro</h1>
-                    <p class="itens-languages">
-                        <i class="fa-brands fa-js" style="color: #fff;"></i>
-                        <i class="fa-brands fa-css3" style="color: #fff;"></i>
-                        <i class="fa-brands fa-html5" style="color: #fff;"></i>
-                    </p>
-        
-                    <p>Cronômetro simples, com função de iniciar, parar e reiniciar. Um dos meus primeiros projetos, feito com JS, HTML5 e CSS3</p>
-                    <p>Versão 1.0</p>
+                <p>Login Page responsiva com HTML5, CSS3 e JavaScript.
+                    <br>Simplesmente uma login page, responsiva com design feito por mim.
+                </p>
+                <p>Versão 1.0</p>
             </div>
-            <button class="fechar" id="fechar">X</button>
+            <button class="fechar" id="fechar">X</button>   
         </div>
     </div>
 
@@ -289,6 +308,31 @@
                 </p>
 
                 <p>Web-site fícticio para Banco Digital.<br> Totalmente responsivo para celulares e tablets.</p>
+                <p>Versão 1.0</p>
+            </div>
+            <button class="fechar" id="fechar">X</button>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="netflix-modal">
+        <div class="modal">
+            <div class="video">
+                <iframe class="video"
+                src="https://www.youtube.com/embed/wDh7_zE2PMA" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
+                allowfullscreen></iframe>
+            </div>
+            <div class="desc">
+                <h1 style="color: #bf19ff;">Netflix Clone</h1>
+                <p class="itens-languages">
+                    <i class="fa-brands fa-js" style="color: #fff;"></i>
+                    <i class="fa-brands fa-css3" style="color: #fff;"></i>
+                    <i class="fa-brands fa-html5" style="color: #fff;"></i>
+                </p>
+
+                <p>Um clone da Netflix.
+                    <br>Feita com JS, CSS3 e HTML5
+                    <br> Com aba inicial, login e catalógo.</p>
                 <p>Versão 1.0</p>
             </div>
             <button class="fechar" id="fechar">X</button>
