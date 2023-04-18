@@ -100,42 +100,60 @@
     <!--Projetos-->
 
     <div id="projetos">
-        <div class="projects reveal">
-            <h2 class="textos">Projects<span class="color-highlight">.</span></h2>
-            <div class="container-projects">
-                <div onclick="abrirModal()" class="itens">
-                    <img src="../images/weather.webp">
-                    <figcaption>Web Weather</figcaption>
-                    <div class="languages">
-                        <figcaption><i class="fa-brands fa-js" style="color: #bf19ff;"></i>  
-                            <i class="fa-brands fa-html5" style="color: #bf19ff;"></i>  
-                            <i class="fa-brands fa-css3-alt" style="color: #bf19ff;"></i></figcaption>
-                    </div>
+        <section class="slider">
+            <div class="slider-content">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
+                <input type="radio" name="btn-radio" id="radio5">
+
+                <div class="slide-box primeiro">
+                    <img onclick="abrirModal()"class="img-desktop" src="../images/weather.webp" alt="slide 1">
+                    <img onclick="abrirModal()"class="img-mobile" src="../images/weather.png" alt="slide 1">
                 </div>
-                <div onclick="abrirCronometro()" class="itens">
-                    <img src="../images/cronom.webp">
-                    <figcaption>Stopwatch</figcaption>
-                    <div class="languages">
-                        <figcaption><i class="fa-brands fa-js" style="color: #bf19ff;"></i>  
-                            <i class="fa-brands fa-html5" style="color: #bf19ff;"></i>  
-                            <i class="fa-brands fa-css3-alt" style="color: #bf19ff;"></i></figcaption>
-                    </div>
+                <div class="slide-box">
+                    <img onclick="abrirLogin()" class="img-desktop" src="../images/login.webp" alt="slide 2">
+                    <img onclick="abrirLogin()" class="img-mobile" src="../images/login_mobile.png" alt="slide 2">
                 </div>
-                <div onclick="abrirPortfolio()" class="itens">
-                    <img src="../images/portfolio.webp">
-                    <figcaption>Portfolio</figcaption>
+                <div class="slide-box">
+                    <img onclick="abrirPortfolio()"class="img-desktop" src="../images/portfolio.webp" alt="slide 3">
+                    <img onclick="abrirPortfolio()"class="img-mobile" src="../images/portfolio_mobile.png" alt="slide 3">
                 </div>
-                <div onclick="abrirSiroti()" class="itens">
-                    <img src="../images/bank.webp">
-                    <figcaption>Siroti Bank</figcaption>
+                <div class="slide-box">
+                    <img onclick="abrirSiroti()" class="img-desktop" src="../images/siroti.webp" alt="slide 4">
+                    <img onclick="abrirSiroti()" class="img-mobile" src="../images/siroti_mobile.png" alt="slide 4">
+                </div>
+                <div class="slide-box">
+                    <img onclick="abrirNetflix()"class="img-desktop" src="../images/netflix.webp" alt="slide 5">
+                    <img onclick="abrirNetflix()"class="img-mobile" src="../images/netflix_mobile.png" alt="slide 5">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
                 </div>
             </div>
-            <p style="font-size: 1.1em; color: rgb(255, 255, 255);">Click on the images to interact!</p>
+        </section>
+        <div class="infopic">
+            <p style="font-size: 1.1em; color: rgb(255, 255, 255);">Click to interact!</p>
             <a href="https://github.com/terukimateus" class="github" target="_blank">
                 <i class="fa-brands fa-github" style="color: #bf19ff;"></i> 
-                For more projects visit my github!</a>
+                For more projects, enter my github!</a>
         </div>
-    </div>
+</div>
 
     <!--EXPERIENCIAS-->
 
@@ -219,30 +237,31 @@
         </div>
     </div>
 
-    <div class="janela-modal" id="cronometro-modal">
+    <div class="janela-modal" id="login-modal">
         <div class="modal">
             <div class="video">
                 <iframe class="video"
-                src="https://www.youtube.com/embed/81ISqMWEv_w" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
-                allowfullscreen></iframe>
-            </div>
+                    src="https://www.youtube.com/embed/9Ka2tofYDfg" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
+                    allowfullscreen></iframe>
+                    <button class="button-projeto" onclick="window.open(url='https://login-page-sigma-woad.vercel.app/')">Para acessar o projeto, clique aqui.</button>
+                </div>   
+            <div id="desc">
+                <h1 style="color: #bf19ff;">Login Page</h1>
+                <p class="itens-languages">
+                    <i class="fa-brands fa-js" style="color: #fff;"></i>
+                    <i class="fa-brands fa-css3" style="color: #fff;"></i>
+                    <i class="fa-brands fa-html5" style="color: #fff;"></i>
+                </p>
 
-              <div class="desc">
-                    <h1 style="color: #bf19ff;">Stopwatch</h1>
-                    <p class="itens-languages">
-                        <i class="fa-brands fa-js" style="color: #fff;"></i>
-                        <i class="fa-brands fa-css3" style="color: #fff;"></i>
-                        <i class="fa-brands fa-html5" style="color: #fff;"></i>
-                    </p>
-        
-                    <p>Simple stopwatch with start, stop and reset function. One of my first projects, made with JS, HTML5 and CSS3</p>
-                    <p>Version 1.0</p>
+                <p>Responsive Login Page, made with JS, CSS3 and HTML5.
+                    <br>It's a login page, with a responsive style, custom inputs, view and lock password function.
+                </p>
+                <p>1.0</p>
             </div>
-            <button class="fechar" id="fechar">X</button>
+            <button class="fechar" id="fechar">X</button>   
         </div>
     </div>
-
     <div class="janela-modal" id="portfolio-modal">
         <div class="modal">
             <div class="video">
@@ -285,6 +304,31 @@
 
                 <p>Fictional website for Banco Digital.</p>
                 <p>Versão 1.0</p>
+            </div>
+            <button class="fechar" id="fechar">X</button>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="netflix-modal">
+        <div class="modal">
+            <div class="video">
+                <iframe class="video"
+                src="https://www.youtube.com/embed/wDh7_zE2PMA" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
+                allowfullscreen></iframe>
+            </div>
+            <div class="desc">
+                <h1 style="color: #bf19ff;">Netflix Clone</h1>
+                <p class="itens-languages">
+                    <i class="fa-brands fa-js" style="color: #fff;"></i>
+                    <i class="fa-brands fa-css3" style="color: #fff;"></i>
+                    <i class="fa-brands fa-html5" style="color: #fff;"></i>
+                </p>
+
+                <p>Netflix Clone Web Site
+                    <br>Made with JS, CSS3 and HTML5.
+                    <br>A clone of the Netflix page, with home page, login and movie catalog, all with responsive design and similar to the original netflix.</p>
+                <p>1.0</p>
             </div>
             <button class="fechar" id="fechar">X</button>
         </div>
