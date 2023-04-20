@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/scripts.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://kit.fontawesome.com/276f9ca786.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <title>Teruki | Siroti</title>
+    <link rel="icon" type="image/webp" href="../images/logo.webp"/>
+</head>
+<body>
+    <div class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="../../index.html"><img src="../images/logo1.webp"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="../pages/projetos.html" class="nav-link">Todos os Projetos</a></li>
+                </ul>
+            </div>
+            
+            <div class="hamburger-icon">
+                <button onclick="pcShow()"><img class="icon" src="../images/menu_white_36dp.svg" alt=""></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon1" src="../images/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a onclick="menuHide()" href="../../index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a onclick="menuHide()" href="../pages/projetos.html" class="nav-link">Todos os Projetos</a></li>
+            </ul>
+        </div>
+        
+            <div class="title">
+                <h1>Siroti Web-Bank.</h1>
+                <p>Site institucional fícticio, com intuito de mostrar a marca e chamar o client.</p>
+                <video src="assets/imgs/siroti.mp4" controls loop autoplay></video>
+            </div>
+
+            <div id="linguagens">
+                <div class="container reveal">
+                    <h1>Linguagens</h1>
+                    <p>Confira as linguagens usadas neste projeto.</p>
+                    <div class="languages">
+                        <div onmouseover="mudarTexto('javascript')" class="item">
+                            <i class="fa-brands fa-js fa-5x"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div onmouseover="mudarTexto('css')" class="item">
+                            <i class="fa-brands fa-css3 fa-5x"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div onmouseover="mudarTexto('html')" class="item">
+                            <i class="fa-brands fa-html5 fa-5x"></i>
+                            <p>HTML5</p>
+                        </div>
+                    </div>
+                    <p id="alterado">*passe o mouse em cima do item*</p>
+                </div>
+            </div>
+    <!--Sobre mim-->
+
+            <div id="responsivo">
+                <div class="container reveal">
+                    <h1>Acesse o Projeto</h1>
+                    <div class="acesse">
+                        <a href="https://sirotibank.vercel.app/" target="_blank">Você pode acessar e testar esse projeto clicando aqui!</a>
+                        <a class="gitt"href="https://github.com/terukimateus/sirotibank" target="_blank"><i class="fa-brands fa-github fa-2x"></i>Acesse o GitHub</a>
+                    </div>
+                </div>
+            </div>
+    
+
+        <!--FOOTER-->
+
+        <div id="footer">
+            <footer class="container">
+                <p style="color: white">Copyright Mateus Teruki©</p>
+                <div class="social-links">
+                    <a href="https://api.whatsapp.com/send?phone=5544998400279" aria-label="Me envie uma mensagem no WhatSapp" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+                    <a href="https://github.com/terukimateus" aria-label="Abre meu GitHub" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/terukimateus/" aria-label="Abre meu Instagram" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                </div>
+            </footer>
+        </div>
+</body>

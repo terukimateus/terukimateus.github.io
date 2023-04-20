@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/scripts.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <title>Teruki | dev</title>
     <link rel="icon" type="image/webp" href="assets/images/logo.webp"/>
+    <meta name="description" content="Author: Mateus Teruki">
 </head>
 <body>
 
@@ -20,8 +21,7 @@
     <div class="header">
         <nav class="nav-bar">
             <div class="logo">
-                <img src="assets/images/logo1.webp">
-                <a href="assets/pages/english.html" class="nav-item"><img style="width: 1.5em;" src="assets/images/united-states.webp"></a>
+                <img src="assets/images/logo1.webp" alt=".">
             </div>
             <div class="nav-list">
                 <ul>
@@ -30,15 +30,16 @@
                     <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
                     <li class="nav-item"><a href="#experiencias" class="nav-link">Experiências</a></li>
                     <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="assets/pages/projetos.html" class="nav-link">Todos Projetos</a></li>
                 </ul>
             </div>
             
             <div class="hamburger-icon">
-                <button onclick="pcShow()"><img class="icon" src="assets/images/menu_white_36dp.svg" alt=""></button>
+                <button onclick="pcShow()" title="hamburger"><img class="icon" src="assets/images/menu_white_36dp.svg" alt="."></button>
             </div>
 
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon1" src="assets/images/menu_white_36dp.svg" alt=""></button>
+                <button onclick="menuShow()"><img class="icon1" src="assets/images/menu_white_36dp.svg" alt="."></button>
             </div>
         </nav>
         <div class="mobile-menu">
@@ -48,10 +49,10 @@
                 <li class="nav-item"><a onclick="menuHide()" href="#projetos" class="nav-link">Projetos</a></li>
                 <li class="nav-item"><a onclick="menuHide()" href="#experiencias" class="nav-link">Experiências</a></li>
                 <li class="nav-item"><a onclick="menuHide()" href="#contato" class="nav-link">Contato</a></li>
-                <li class="nav-item"><a onclick="menuHide()" href="assets/pages/english.html" class="nav-link"><img style="width: 1.5em;" src="assets/images/united-states.webp"></a></li>
+                <li class="nav-item"><a onclick="menuHide()" href="assets/pages/projetos.html" class="nav-link">Todos os Projetos</a></li>
             </ul>
         </div>
-    </header>
+    </div>
     
  <!--TEXT APRESENTATION-->
 
@@ -85,7 +86,7 @@
     <div id="about">
         <div class="container reveal">
             <div class="about-photo">
-                <img id="photo" src="assets/images/eu.webp">
+                <img id="photo" src="assets/images/eu.webp" alt=".">
             </div>
             <div class="about-desc">
                 <h2 class="textos">Mateus Teruki<span class="color-highlight">.</span></h2>
@@ -94,7 +95,7 @@
                 <p>Meu nome é Mateus Teruki, sou desenvolvedor front-end, estou cursando Engenharia de Software.
                     <br>Atualmente atuo na área de Design Gráfico, como Estágiario na Saura MaisBB.
                 </p>
-                <button class="icon-habilities reveal"onclick="abrirInfo()">Mais informações</a>
+                <button class="icon-habilities reveal"onclick="abrirModal('info-modal')">Mais informações</a>
             </div>
         </div>
     </div>
@@ -111,24 +112,24 @@
                     <input type="radio" name="btn-radio" id="radio5">
 
                     <div class="slide-box primeiro">
-                        <img onclick="abrirModal()"class="img-desktop" src="assets/images/weather.webp" alt="slide 1">
-                        <img onclick="abrirModal()"class="img-mobile" src="assets/images/weather.png" alt="slide 1">
+                        <img onclick="abrirModal('janela-modal')"class="img-desktop" src="assets/images/weather.webp" alt="slide 1">
+                        <img onclick="abrirModal('janela-modal')"class="img-mobile" src="assets/images/weather_mobiel.webp" alt="slide 1">
                     </div>
                     <div class="slide-box">
-                        <img onclick="abrirLogin()" class="img-desktop" src="assets/images/login.webp" alt="slide 2">
-                        <img onclick="abrirLogin()" class="img-mobile" src="assets/images/login_mobile.png" alt="slide 2">
+                        <img onclick="abrirModal('login-modal')" class="img-desktop" src="assets/images/login.webp" alt="slide 2">
+                        <img onclick="abrirModal('login-modal')" class="img-mobile" src="assets/images/login_mobile.webp" alt="slide 2">
                     </div>
                     <div class="slide-box">
-                        <img onclick="abrirPortfolio()"class="img-desktop" src="assets/images/portfolio.webp" alt="slide 3">
-                        <img onclick="abrirPortfolio()"class="img-mobile" src="assets/images/portfolio_mobile.png" alt="slide 3">
+                        <img onclick="abrirModal('portfolio-modal')"class="img-desktop" src="assets/images/portfolio.webp" alt="slide 3">
+                        <img onclick="abrirModal('portfolio-modal')"class="img-mobile" src="assets/images/portfolio_mobile.webp" alt="slide 3">
                     </div>
                     <div class="slide-box">
-                        <img onclick="abrirSiroti()" class="img-desktop" src="assets/images/siroti.webp" alt="slide 4">
-                        <img onclick="abrirSiroti()" class="img-mobile" src="assets/images/siroti_mobile.png" alt="slide 4">
+                        <img onclick="abrirModal('siroti-modal')" class="img-desktop" src="assets/images/siroti.webp" alt="slide 4">
+                        <img onclick="abrirModal('siroti-modal')" class="img-mobile" src="assets/images/siroti_mobile.webp" alt="slide 4">
                     </div>
                     <div class="slide-box">
-                        <img onclick="abrirNetflix()"class="img-desktop" src="assets/images/netflix.webp" alt="slide 5">
-                        <img onclick="abrirNetflix()"class="img-mobile" src="assets/images/netflix_mobile.png" alt="slide 5">
+                        <img onclick="abrirModal('netflix-modal')"class="img-desktop" src="assets/images/netflix.webp" alt="slide 5">
+                        <img onclick="abrirModal('netflix-modal')"class="img-mobile" src="assets/images/netflix_mobile.webp" alt="slide 5">
                     </div>
 
                     <div class="nav-auto">
@@ -150,9 +151,7 @@
             </section>
             <div class="infopic">
                 <p style="font-size: 1.1em; color: rgb(255, 255, 255);">Clique nas imagens para interagir!</p>
-                <a href="https://github.com/terukimateus" class="github" target="_blank">
-                    <i class="fa-brands fa-github" style="color: #bf19ff;"></i> 
-                    Para mais projetos acesse meu github!</a>
+                <a href="assets/pages/projetos.html" class="github" target="_blank">Acesse Todos os Projetos.</a>
             </div>
     </div>
 
@@ -186,14 +185,14 @@
                 <div class="aaa">
                 <form action="https://formsubmit.co/terukimateus@outlook.com" method="POST" class="form">
                     <label for="name">Nome:</label>
-                    <input type="text" name="name" required>
+                    <input type="text" name="name" id="name" required>
                     <label for="email">E-mail:</label>
-                    <input type="email" name="email" required>
+                    <input type="email" name="email" id="email" required>
                     <label for="message">Mensagem</label>
-                    <textarea name="message" required></textarea>
+                    <textarea name="message" id="message" required></textarea>
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="http://terukimateus.github.io/assets/pages/thanks.html">
-                    <button type="submit"><i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i></button>
+                    <button type="submit" aria-label="submit"><i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i></button>
                 </form>
             </div>
             </div>
@@ -205,9 +204,9 @@
         <footer class="container">
             <p style="color: white">Copyright Mateus Teruki©</p>
             <div class="social-links">
-                <a href="https://api.whatsapp.com/send?phone=5544998400279" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
-                <a href="https://github.com/terukimateus" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
-                <a href="https://www.instagram.com/terukimateus/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5544998400279" aria-label="Me envie uma mensagem no WhatSapp" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+                <a href="https://github.com/terukimateus" aria-label="Abre meu GitHub" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+                <a href="https://www.instagram.com/terukimateus/" aria-label="Abre meu Instagram" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
             </div>
         </footer>
     </div>
@@ -321,6 +320,7 @@
                 src="https://www.youtube.com/embed/wDh7_zE2PMA" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
                 allowfullscreen></iframe>
+                <button class="button-projeto" onclick="window.open(url='https://netflix-clone-one-lyart.vercel.app/')">Para acessar o projeto, clique aqui.</button>
             </div>
             <div class="desc">
                 <h1 style="color: #bf19ff;">Netflix Clone</h1>

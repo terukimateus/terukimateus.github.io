@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="assets/projetos.css">
+    <script src="assets/projetos.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://kit.fontawesome.com/276f9ca786.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <title>Teruki | Projetos</title>
+    <link rel="icon" type="image/webp" href="../images/logo.webp"/>
+</head>
+<body>
+    <div class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="../../index.html"><img src="../images/logo1.webp"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+                </ul>
+            </div>
+            
+            <div class="hamburger-icon">
+                <button onclick="pcShow()"><img class="icon" src="../images/menu_white_36dp.svg" alt=""></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon1" src="../images/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a onclick="menuHide()" href="../../index.html" class="nav-link">Início</a></li>
+            </ul>
+        </div>
+
+            <div class="title">
+                <h1>Conheça meus <span class="color-highlight">Projetos</span>.</h1>
+                <p>Projetos full-stack, como landing pages, clones, login pages, SaSS, etc..</p>
+            </div>
+
+    <!--Sobre mim-->
+    <div id="about">
+        <div class="container reveal">
+            <div class="projects">
+                <div onclick="abrirItem('weather')" class="item">
+                    <img src="assets/imgs/weather.webp" alt="weather">
+                    <div class="info">
+                        <p>Weather</p>
+                        <div class="icons">
+                            <i class="fa-brands fa-js fa-2x"></i>
+                            <i class="fa-brands fa-css3 fa-2x"></i>
+                            <i class="fa-brands fa-html5 fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="abrirItem('login')"class="item">
+                    <img src="assets/imgs/login.webp" alt="login">
+                    <div class="info">
+                        <p>Login Page</p>
+                        <div class="icons">
+                            <i class="fa-brands fa-js fa-2x"></i>
+                            <i class="fa-brands fa-css3 fa-2x"></i>
+                            <i class="fa-brands fa-html5 fa-2x"></i>
+                            <i class="fa-brands fa-sass fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="abrirItem('netflix')"class="item">
+                    <img src="assets/imgs/netflix.webp" alt="netflix">
+                    <div class="info">
+                        <p>Neflix</p>
+                        <div class="icons">
+                            <i class="fa-brands fa-js fa-2x"></i>
+                            <i class="fa-brands fa-css3 fa-2x"></i>
+                            <i class="fa-brands fa-html5 fa-2x"></i>
+                            <i class="fa-brands fa-sass fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div class="projects">
+                <div onclick="abrirItem('siroti')"class="item">
+                    <img src="assets/imgs/siroti.webp" alt="siroti">
+                    <div class="info">
+                        <p>Siroti Bank</p>
+                        <div class="icons">
+                            <i class="fa-brands fa-js fa-2x"></i>
+                            <i class="fa-brands fa-css3 fa-2x"></i>
+                            <i class="fa-brands fa-html5 fa-2x"></i>
+                            <i class="fa-brands fa-sass fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="abrirItem('music')"class="item">
+                    <img src="assets/imgs/music.webp" alt="music">
+                    <div class="info">
+                        <p>Music Player</p>
+                        <div class="icons">
+                            <i class="fa-brands fa-js fa-2x"></i>
+                            <i class="fa-brands fa-css3 fa-2x"></i>
+                            <i class="fa-brands fa-html5 fa-2x"></i>
+                            <i class="fa-brands fa-sass fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="abrirItem('portfolio')"class="item">
+                    <img src="assets/imgs/portfolio.webp" alt="portfolio">
+                    <div class="info">
+                        <p>Portfólio</p>
+                        <div class="icons">
+                            <i class="fa-brands fa-js fa-2x"></i>
+                            <i class="fa-brands fa-css3 fa-2x"></i>
+                            <i class="fa-brands fa-html5 fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    </div>
+
+        <!--FOOTER-->
+
+        <div id="footer">
+            <footer class="container">
+                <p style="color: white">Copyright Mateus Teruki©</p>
+                <div class="social-links">
+                    <a href="https://api.whatsapp.com/send?phone=5544998400279" aria-label="Me envie uma mensagem no WhatSapp" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+                    <a href="https://github.com/terukimateus" aria-label="Abre meu GitHub" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/terukimateus/" aria-label="Abre meu Instagram" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                </div>
+            </footer>
+        </div>
+</body>

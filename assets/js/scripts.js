@@ -22,109 +22,21 @@ function reveal() {
 
   // MODAL //
 
-  function abrirModal() {
-    const modal = document.getElementById('janela-modal')
-    modal.classList.add('abrir')
-
-    modal.addEventListener('click', (e) => {
-      if(e.target.id == 'fechar' || e.target.id == 'janela-modal') {
-        modal.classList.remove('abrir')
-      }
-      window.addEventListener('keydown', function (event) {
-        const modal = document.getElementById('janela-modal')
-      if (event.key === 'Escape') {
-        modal.classList.remove('abrir')
-      }
-    })
-    
-    })
-  }
-
-  function abrirPortfolio() {
-    const modal = document.getElementById('portfolio-modal')
-    modal.classList.add('abrir')
-
-    modal.addEventListener('click', (e) => {
-      if(e.target.id == 'fechar' || e.target.id == 'portfolio-modal') {
-        modal.classList.remove('abrir')
-      }
-      window.addEventListener('keydown', function (event) {
-        const modal = document.getElementById('portfolio-modal')
-      if (event.key === 'Escape') {
-        modal.classList.remove('abrir')
-      }
-    })    
-    })
-  }
+  function abrirModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.add('abrir');
   
-
-  function abrirSiroti() {
-    const modal = document.getElementById('siroti-modal')
-    modal.classList.add('abrir')
-
     modal.addEventListener('click', (e) => {
-      if(e.target.id == 'fechar' || e.target.id == 'siroti-modal') {
-        modal.classList.remove('abrir')
+      if (e.target.classList.contains('fechar') || e.target.classList.contains(modalId)) {
+        modal.classList.remove('abrir');
       }
-      window.addEventListener('keydown', function (event) {
-        const modal = document.getElementById('siroti-modal')
+    });
+  
+    window.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
-        modal.classList.remove('abrir')
+        modal.classList.remove('abrir');
       }
-    })    
-    })
-  }
-
-  function abrirNetflix() {
-    const modal = document.getElementById('netflix-modal')
-    modal.classList.add('abrir')
-
-    modal.addEventListener('click', (e) => {
-      if(e.target.id == 'fechar' || e.target.id == 'netflix-modal') {
-        modal.classList.remove('abrir')
-      }
-      window.addEventListener('keydown', function (event) {
-        const modal = document.getElementById('netflix-modal')
-      if (event.key === 'Escape') {
-        modal.classList.remove('abrir')
-      }
-    })    
-    })
-  }
-
-
-  function abrirLogin() {
-    const modal = document.getElementById('login-modal')
-    modal.classList.add('abrir')
-
-    modal.addEventListener('click', (e) => {
-      if(e.target.id == 'fechar' || e.target.id == 'login-modal') {
-        modal.classList.remove('abrir')
-      }
-      window.addEventListener('keydown', function (event) {
-        const modal = document.getElementById('login-modal')
-      if (event.key === 'Escape') {
-        modal.classList.remove('abrir')
-      }
-    })    
-    })
-  }
-
-  function abrirInfo() {
-    const modal = document.getElementById('info-modal')
-    modal.classList.add('abrir')
-
-    modal.addEventListener('click', (e) => {
-      if(e.target.id == 'fechar' || e.target.id == 'info-modal') {
-        modal.classList.remove('abrir')
-      }
-      window.addEventListener('keydown', function (event) {
-        const modal = document.getElementById('info-modal')
-      if (event.key === 'Escape') {
-        modal.classList.remove('abrir')
-      }
-    })    
-    })
+    });
   }
   ///EXPERIENCIAS///
   function saura() {
