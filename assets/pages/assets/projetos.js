@@ -94,6 +94,9 @@ function reveal() {
               case 'portfolio':
                 window.location.href = 'portfolio.html';
                 break;
+                case 'age':
+                window.location.href = 'age.html';
+                break;
         default:
             break;
     }
