@@ -1,0 +1,34 @@
+.imgME {
+    max-width: 100%;
+    height: auto;
+    border-radius: .7rem
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-text {
+    max-width: 32rem;
+    text-align: start;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.625rem;
+    color: #A1A1A1
+}
+.hl {
+    font-weight: 300;
+    color: white;
+}
+
+
+@media screen and (min-width: 1025px) {
+    .about {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,79 @@
+.forms {
+    padding: 1.5rem;
+    border: 0 solid rgb(68,68,68);
+    border-width: 1px;
+    border-radius: 1rem;
+}
+
+.title-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-desc {
+    color: #A1A1A1;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-user {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+
+.input-label input, textarea {
+    width: 100%;
+    font-size: .875rem;
+    font-weight: 200;
+    line-height: 1.25rem;
+    background-color: transparent;
+    border: 0 solid rgb(68,68,68);
+    border-width: 1px;
+    border-radius: .2rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    color: white;
+}
+.input-label input,textarea::placeholder {
+    color: #A1A1A1;
+}
+
+.input-label input:focus{
+    border-color: white;
+    outline: none; /* Remove o outline padrão */
+}
+
+.input-label textarea:focus {
+    outline: none;
+    border-color: white;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.form-submit {
+    font-size: 1rem;
+    font-weight: 200;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    border: none;
+    border-radius: .7rem;
+    cursor: pointer;
+}

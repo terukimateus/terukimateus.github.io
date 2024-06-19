@@ -1,0 +1,93 @@
+.scale {
+    transition: .5s
+}
+
+.scale:hover {
+    transform: scale(1.05);
+}
+
+.padding-more {
+    padding-top: 3rem
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1;
+}
+
+.project-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.project-desc p {
+    font-size: 1.4rem;
+    color: #A1A1A1;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 1rem
+}
+
+.stat {
+    position: relative;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    align-items: center;
+    display: flex;
+}
+
+.status {
+    padding-left: 0rem;
+    width: .5rem;
+    height: .5rem;
+    display: flex;
+    position: absolute;
+}
+
+.status-ball {
+    position: absolute;
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    animation: ping 1s cubic-bezier(0,0,.2,1) infinite;
+    border-radius: 9999px;
+    background-color: rgb(82, 239, 68);
+    padding-left: .25rem;
+    opacity: .75;
+}
+
+.status-shadow {
+    padding-left: .5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(68, 239, 68);
+    border-radius: 9999px;
+    width: .5rem;
+    height: .5rem;
+    display: inline-flex;
+    position: relative;
+}
+
+.status-text {
+    padding-left: 1.25rem;
+    color: #A1A1A1;
+    font-weight: 300;
+}
+
+@keyframes ping {
+    75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+}
+
+@media screen and (min-width: 1025px) {
+    .project {
+        flex-direction: row;
+    }    
+}
