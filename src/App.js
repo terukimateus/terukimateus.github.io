@@ -5,6 +5,7 @@ import About from './pages/About/About'
 import Projects from './pages/Projects/Projects'
 import Experiences from './pages/Experiences/Experiences';
 import Contact from './pages/Contact/Contact';
+import React from 'react';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
