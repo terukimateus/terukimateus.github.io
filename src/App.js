@@ -7,7 +7,7 @@ import Experiences from './pages/Experiences/Experiences';
 import Contact from './pages/Contact/Contact';
 import React from 'react';
 
-import { HashRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (

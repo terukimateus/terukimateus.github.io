@@ -40,10 +40,10 @@ function Header()  {
                             <span style={styles.headerTxt}>mateus teruki</span>
                         </a>
                         <ul style={styles.headerNav}>
-                            <li><a href="/about" className="headerBTN">About me</a></li>
-                            <li><a href ='/projects' className="headerBTN">Projects</a></li>
-                            <li><a href ='/experiences' className="headerBTN">Experiences</a></li>
-                            <li><a href='/contact' className="headerBTN">Contact</a></li>
+                            <li><a href="/#/about" className="headerBTN">About me</a></li>
+                            <li><a href ='/#/projects' className="headerBTN">Projects</a></li>
+                            <li><a href ='/#/experiences' className="headerBTN">Experiences</a></li>
+                            <li><a href='/#/contact' className="headerBTN">Contact</a></li>
                         </ul>
                     </div>
                 )} 

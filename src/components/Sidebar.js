@@ -12,13 +12,13 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
         <div className='line-sidebar'/>
         <nav className="sidebar-nav">
           <ul>
-            <li><a href="/about">About me</a></li>
+            <li><a href="/#/about">About me</a></li>
             <div className='line-sidebarr'/>
-            <li><a href="/projects">Projects</a></li>
+            <li><a href="/#/projects">Projects</a></li>
             <div className='line-sidebarr'/>
-            <li><a href="/experiences">Experiences</a></li>
+            <li><a href="/#/experiences">Experiences</a></li>
             <div className='line-sidebarr'/>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/#/contact">Contact</a></li>
           </ul>
         </nav>
         <button style={styles.closeBTN} onClick={closeSidebar}>

@@ -11,7 +11,7 @@ function Pages() {
 
     return(
         <div className="flex">
-            <a className="rounded" title='Projects' href='/about'>
+            <a className="rounded" title='Projects' href='/#/about'>
             <div>
                 <img className='pageImg' width='250' height='250' decoding='async' alt='About' src={imgAbout}/>
                 <div className="absolute top">
@@ -22,7 +22,7 @@ function Pages() {
                 </div>
             </div>
             </a>
-            <a className="rounded" title='Projects' href='/projects'>
+            <a className="rounded" title='Projects' href='/#/projects'>
             <div>
                 <img className='pageImg' width='250' height='250' decoding='async' alt='Projects' src={imgProject}/>
                 <div className="absolute top">
@@ -33,7 +33,7 @@ function Pages() {
                 </div>
             </div>
             </a>
-            <a className="rounded" title='Projects' href='/experiences'>
+            <a className="rounded" title='Projects' href='/#/experiences'>
             <div>
                 <img className='pageImg' width='250' height='250' decoding='async' alt='Experiences' src={imgExperiences}/>
                 <div className="absolute top">
@@ -44,7 +44,7 @@ function Pages() {
                 </div>
             </div>
             </a>
-            <a className="rounded" title='Projects' href='/contact'>
+            <a className="rounded" title='Projects' href='/#/contact'>
             <div>
                 <img className='pageImg' width='250' height='250' decoding='async' alt='Projects' src={imgContact}/>
                 <div className="absolute top">
