@@ -15,7 +15,7 @@ function Pages() {
             <div>
                 <img className='pageImg' width='250' height='250' decoding='async' alt='About' src={imgAbout}/>
                 <div className="absolute top">
-                    <a className="btn"><FaRegUser/></a>
+                    <button style={{color: 'black'}} className="btn"><FaRegUser/></button>
                 </div>
                 <div className="absolute bottom">
                     <p>About me</p>
@@ -26,7 +26,7 @@ function Pages() {
             <div>
                 <img className='pageImg' width='250' height='250' decoding='async' alt='Projects' src={imgProject}/>
                 <div className="absolute top">
-                    <a className="btn"><FaCode/></a>
+                    <button className="btn"><FaCode/></button>
                 </div>
                 <div className="absolute bottom">
                     <p>Projects</p>
@@ -37,7 +37,7 @@ function Pages() {
             <div>
                 <img className='pageImg' width='250' height='250' decoding='async' alt='Experiences' src={imgExperiences}/>
                 <div className="absolute top">
-                    <a className="btn"><FaMugHot/></a>
+                    <button className="btn"><FaMugHot/></button>
                 </div>
                 <div className="absolute bottom">
                     <p>Experiences</p>
@@ -48,7 +48,7 @@ function Pages() {
             <div>
                 <img className='pageImg' width='250' height='250' decoding='async' alt='Projects' src={imgContact}/>
                 <div className="absolute top">
-                    <a className="btn"><FaVoicemail/></a>
+                    <button className="btn"><FaVoicemail/></button>
                 </div>
                 <div className="absolute bottom">
                     <p>Contact</p>

@@ -17,9 +17,9 @@ function Home() {
         </div>
         <span className="desc">Software Developer FullStack, focused on Frontend. Some projects in React.js, React Native, Javascript, and others..</span>
         <button className='btn1'>
-        <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/terukimateus/'>
-        Go to my Linkedin<TfiArrowTopRight/>
-        </a>
+          <a style={{color: 'black'}} target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/terukimateus/'>
+          Go to my Linkedin<TfiArrowTopRight/>
+          </a>
         </button>
       </div>
 
