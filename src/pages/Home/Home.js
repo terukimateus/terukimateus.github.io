@@ -16,9 +16,11 @@ function Home() {
           <span className="h2">Fullstack developer</span>
         </div>
         <span className="desc">Software Developer FullStack, focused on Frontend. Some projects in React.js, React Native, Javascript, and others..</span>
+        <button className='btn1'>
         <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/terukimateus/'>
-          <button className='btn1'>Go to my Linkedin<TfiArrowTopRight/></button>
+        Go to my Linkedin<TfiArrowTopRight/>
         </a>
+        </button>
       </div>
 
       <div className='content pages padding'>
