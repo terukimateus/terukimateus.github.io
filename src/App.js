@@ -7,11 +7,11 @@ import Experiences from './pages/Experiences/Experiences';
 import Contact from './pages/Contact/Contact';
 import React from 'react';
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, HashRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
@@ -19,7 +19,7 @@ function App() {
           <Route path='/experiences' element={<Experiences/>}/>
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 
