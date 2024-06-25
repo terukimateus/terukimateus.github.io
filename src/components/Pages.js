@@ -15,7 +15,7 @@ function Pages() {
             <div>
                 <img className='pageImg' width='250' height='250' decoding='async' alt='About' src={imgAbout}/>
                 <div className="absolute top">
-                    <button style={{color: 'black'}} className="btn"><FaRegUser/></button>
+                    <button style={{color: 'black'}} className="btn"><FaRegUser color="black"/></button>
                 </div>
                 <div className="absolute bottom">
                     <p>About me</p>
@@ -26,7 +26,7 @@ function Pages() {
             <div>
                 <img className='pageImg' width='250' height='250' decoding='async' alt='Projects' src={imgProject}/>
                 <div className="absolute top">
-                    <button className="btn"><FaCode/></button>
+                    <button style={{color: 'black'}} className="btn"><FaCode color="black"/></button>
                 </div>
                 <div className="absolute bottom">
                     <p>Projects</p>
@@ -37,7 +37,7 @@ function Pages() {
             <div>
                 <img className='pageImg' width='250' height='250' decoding='async' alt='Experiences' src={imgExperiences}/>
                 <div className="absolute top">
-                    <button className="btn"><FaMugHot/></button>
+                    <button style={{color: 'black'}} className="btn"><FaMugHot color="black"/></button>
                 </div>
                 <div className="absolute bottom">
                     <p>Experiences</p>
@@ -48,7 +48,7 @@ function Pages() {
             <div>
                 <img className='pageImg' width='250' height='250' decoding='async' alt='Projects' src={imgContact}/>
                 <div className="absolute top">
-                    <button className="btn"><FaVoicemail/></button>
+                    <button style={{color: 'black'}} className="btn"><FaVoicemail color="black"/></button>
                 </div>
                 <div className="absolute bottom">
                     <p>Contact</p>

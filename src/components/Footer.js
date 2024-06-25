@@ -10,22 +10,22 @@ function Footer() {
                 <div className='itens'>
                     <div className='itens-grid'>
                         <button class='footerBtn'title='Instagram'>
-                            <a className='a' rel="noreferrer" target='_blank' href='https://www.instagram.com/terukimateus'>
+                            <a className='a' rel="noopener noreferrer" target='_blank' href='https://www.instagram.com/terukimateus'>
                                 <FaInstagram color='white' size={20}/>
                             </a>
                         </button>
                         <button  class='footerBtn' title='Github'>
-                            <a className='a'  rel="noreferrer" target='_blank' href='https://github.com/terukimateus'>
+                            <a className='a'  rel="noopener noreferrer" target='_blank' href='https://github.com/terukimateus'>
                                 <FaGithub color='white' size={20}/>
                             </a>
                         </button>
                         <button class='footerBtn' title='Linkedin'>
-                            <a className='a' rel="noreferrer" target='_blank' href='https://www.linkedin.com/in/terukimateus/'>
+                            <a className='a' rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/in/terukimateus/'>
                                 <FaLinkedinIn color='white' size={20}/>
                             </a>
                         </button>
                         <button class='footerBtn' title='Email'>
-                            <a className='a'rel="noreferrer" target='_blank' href='mailto:terukimateus@outlook.com'>
+                            <a className='a'rel="noopener noreferrer" target='_blank' href='mailto:terukimateus@outlook.com'>
                                 <FaEnvelope color='white' size={20}/>
                             </a>
                         </button>

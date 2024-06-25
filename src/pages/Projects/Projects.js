@@ -35,12 +35,12 @@ function Projects() {
 
                             <div className="project-buttons">
                                 <button className="btn1">
-                                    <a rel="noreferrer" style={{color: 'black'}} href="https://shorter-url-ten.vercel.app/" target="_blank">
+                                    <a rel="noopener noreferrer" style={{color: 'black'}} href="https://shorter-url-ten.vercel.app/" target="_blank">
                                     Deploy<TfiArrowTopRight size={18}/>
                                     </a>
                                 </button>
                                 <button className="btn1">
-                                    <a rel="noreferrer" style={{color: 'black'}}href="https://github.com/terukimateus/shorter-url" target="_blank">
+                                    <a rel="noopener noreferrer" style={{color: 'black'}}href="https://github.com/terukimateus/shorter-url" target="_blank">
                                     Code<VscCode size={18}/>
                                     </a>
                                 </button>
