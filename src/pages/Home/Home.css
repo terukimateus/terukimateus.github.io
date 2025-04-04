@@ -98,7 +98,7 @@ a {
 }
 
 .line {
-  background-color: rgb(39, 39, 42);
+  background-color: rgba(31, 31, 32, 0.712);
   height: 1px;
   width: 100vw
 }

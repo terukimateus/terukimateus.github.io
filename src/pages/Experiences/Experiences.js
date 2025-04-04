@@ -17,6 +17,11 @@ function Experiences() {
                         <span className="grey">Developer FullStack</span>
                         <i className="grey">2022 Nov - currently</i>
                     </div>
+                    <div className="experience">
+                        <span className="bold">Saura MaisBB</span>
+                        <span className="grey">Design Internship</span>
+                        <i className="grey">2023 March - 2023 Jun</i>
+                    </div>
                 </div>
             </div>
 

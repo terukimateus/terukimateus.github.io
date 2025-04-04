@@ -25,11 +25,13 @@
     opacity: .3;
     aspect-ratio: 16/9;
     border-radius: 1rem;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s, filter 0.3s;
+    filter: grayscale(70%); /* Torna a imagem preto e branco */
 }
 
 .pageImg:hover {
     opacity: .5;
+    filter: grayscale(45%); /* Remove o preto e branco ao passar o mouse */
 }
 
 .absolute {

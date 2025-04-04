@@ -16,10 +16,9 @@ function Home() {
           <span className="h2">Fullstack developer</span>
         </div>
         <span className="desc">Software Developer FullStack, focused on Frontend. Some projects in React.js, React Native, Javascript, and others..</span>
-        <button className='btn1'>
-          <a style={{color: 'black'}} target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/terukimateus/'>
-          Go to my Linkedin<TfiArrowTopRight/>
-          </a>
+        <button className='btn1' onClick={ () => window.open("https://www.linkedin.com/in/terukimateus/", "_blank", "noopener,noreferrer")}>
+          Go to my LinkedIn
+          <TfiArrowTopRight/>
         </button>
       </div>
 
